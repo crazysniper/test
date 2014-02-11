@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="struts2" extends="struts-default">
+		<action name ="login" class ="com.dinner.gts.action.LoginAction">
+		</action>
+		<action name = "loginStatus" class ="com.dinner.gts.action.LoginAction" method="checkLoginUserStatus">
+			<result name="success" type="chain">login</result>
+		</action>
+		<action name ="checkuser" class ="com.dinner.gts.action.RegisterAction" method="checkUser">
+		</action>
+		<action name ="reguser" class ="com.dinner.gts.action.RegisterAction">
+		</action>
+		<action name ="gifcode" class ="com.dinner.gts.action.RegisterAction" method="createGitCode">
+		</action>
+		<action name ="checkgifcode" class ="com.dinner.gts.action.RegisterAction" method="checkGifcode">
+		</action>
+		<action name ="advise" class ="com.dinner.gts.action.FeedbackAction">
+		</action>
+		<action name = "agreement" class = "com.dinner.gts.action.RegisterAction" method="aquareAgreement">
+		</action>
+		<action name = "logout" class = "com.dinner.gts.action.LoginAction" method="sessionRemove">
+			<result name="success">/login.jsp</result>
+		</action>
+		<action name = "note" class= "com.dinner.gts.action.NoteAction">
+		</action>
+		<action name = "notelist" class = "com.dinner.gts.action.NoteAction" method="findNote">
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.dinner.gts.model">
+
+    <class name="Member" table="MT_MEMBER">
+        <id name="memberId" column="MEMBER_ID">
+            <generator class="assigned" />
+        </id>
+        <property name="memberLoginId" column="MEMBER_LOGIN_ID"/>
+        <property name="memberLoginPw" column="MEMBER_LOGIN_PW"/>
+        <property name="memberNickName" column="MEMBER_NICK_NAME"/>
+        <property name="memberMail" column="MEMBER_MAIL"/>
+        <property name="memberRegisterIp" column="MEMBER_REGISTER_IP"/>
+        <property name="memberMacAddress" column="MEMBER_LOGIN_MACADDRESS"/>
+        <property name="memberLoginCount" column="MEMBER_LOGIN_COUNT"/>
+        <property name="memberRealName" column="MEMBER_REAL_NAME"/>
+        <property name="memberType" column="MEMBER_TYPE"/>
+        <property name="memberQq" column="MEMBER_QQ"/>
+        <property name="memberBalance" column="MEMBER_BALANCE"/>
+        <property name="memberPoints" column="MEMBER_POINTS"/>
+        <property name="memberTel" column="MEMBER_TEL"/>
+        <property name="memberPhone" column="MEMBER_PHONE" />
+        <property name="memberCompany" column="MEMBER_COMPANY" />
+        <property name="RegistTime" column="REGIST_TIME"/>
+        <property name="updateTime" column="UPDATE_TIME"/>
+        <property name="deleteFlg" column="DELETE_FLG"/>
+        <property name="loginStatus" column="LOGIN_STATUS"/>
+    </class>
+
+</hibernate-mapping>
