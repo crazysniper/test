@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="vertical" >
 
         <TextView
             android:id="@+id/showinput"
@@ -38,7 +38,7 @@
 
     <TableLayout
             android:layout_width="fill_parent"  
-            android:layout_height="fill_parent">
+            android:layout_height="wrap_content">
 
         <TableRow>
 
@@ -55,12 +55,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:inputType="number"
+                android:layout_column="1"
                 android:hint="@string/et2" />
 
             <EditText
                 android:id="@+id/et3"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_column="2"
                 android:hint="@string/et3" />
         </TableRow>
     </TableLayout>
