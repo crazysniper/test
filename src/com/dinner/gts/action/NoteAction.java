@@ -1,6 +1,7 @@
 package com.dinner.gts.action;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -48,16 +49,14 @@ public class NoteAction extends ActionSupport {
 		return null;
 	}
 
-	public List<Note> findNote(){
+	public String findNote(){
+		HttpServletRequest request = CommonUtil.getHttpServletRequest();
 		List<Note> noteList = new ArrayList<Note>();
 		noteService = new NoteService();
 		noteList = noteService.getServiceNote();
-		for(Note n:noteList){
-			System.out.println(n.getNoteId());
-		}
-		return noteList;
+		request.setAttribute("noteList", noteList);
+		return SUCCESS;
 	}
-	
 	
 	/**
 	 * 将用户输入的留言信息封装至实体
@@ -87,9 +86,10 @@ public class NoteAction extends ActionSupport {
 		note.setNoteMood(req.getParameter("mood"));
 		// 悄悄话
 		note.setNoteSecret(1);
+		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		// 留言时间
-		note.setNoteTime(new Date());
+		note.setNoteTime(sdf.format(new Date()));
 		// 更新时间
-		note.setUpdateTime(new Date());
+		note.setUpdateTime(sdf.format(new Date()));
 	}
 }

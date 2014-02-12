@@ -52,57 +52,89 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                 <a href="-1" style="line-height:25px;color:">更多</a>
                             </div>
                         </div>
-                        <div style="padding:0px">
-                            <div id="guestbookquery">
-
-                                <div class="cap">
-                                    <div class="au"><strong><font class="auz">作者信息</font></strong>
-                                    </div>
-                                    <div class="gb"><strong><font class="gbz">留言信息</font></strong>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="guestbook">
-
-                                    <div class="auinfo">
-                                        <div class="aupic">
-                                            <img src="images/m01.gif" border="0" />
-                                        </div>
-                                        <div class="auname">aaaa</div>
-                                        <div class="lynum">第61条留言</div>
-                                    </div>
-
-                                    <div class="gbinfo">
-                                        <div class="ttinfo">
-                                            <div class="title">标题：rrrr</div>
-                                            <div class="fjinfo">
-                                                <img src="images/homepage.gif" border="0" /><a href='http://'>主页</a>&nbsp;&nbsp;
-                                                <img src="images/email.gif" border="0" />信箱&nbsp;&nbsp;
-                                                <img src="images/qq.gif" border="0" />&nbsp;QQ</div>
-                                        </div>
-                                        <div class="lyinfo">
-                                            <div class="mood">
-                                                <img src="images/s1.gif" border="0" />
-                                            </div>
-                                            <div class="bdinfo2">????</div>
-                                        </div>
-                                        <div class="hfinfo">
-                                            <div class="hf" style="display:none;">版主回复：</div>
-                                            <div class="hfanswer" style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                                        </div>
-                                        <div class="btinfo">
-                                            <img src="images/posttime.gif" border="0" />&nbsp;&nbsp;2011-07-06 10:37:08&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <img src="images/ip.gif" border="0" />&nbsp;&nbsp;222.78.129.168
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div id="showpages">
+                        <s:iterator value="#request.noteList">
+	                        <div style="padding:0px">
+	                            <div id="guestbookquery">
+	                                <div class="guestbook">
+	
+	                                    <div class="auinfo">
+	                                        <div class="aupic">
+	                                            <img src="images/m01.gif" border="0" />
+	                                        </div>
+	                                        <div class="auname"><s:property value="noteLoginId"/></div>
+	                                        <div class="lynum">第<s:property value="noteLoginId"/>条留言</div>
+	                                    </div>
+	
+	                                    <div class="gbinfo">
+	                                        <div class="ttinfo">
+	                                            <div class="title"><s:property value="noteTopic"/></div>
+	                                            <div class="fjinfo">
+	                                                <img src="images/homepage.gif" border="0" /><a href="http://www.baidu.com" target="_blank">主页</a>&nbsp;&nbsp;
+	                                                <img src="images/email.gif" border="0" />信箱&nbsp;&nbsp;
+	                                                <img src="images/qq.gif" border="0" />&nbsp;QQ</div>
+	                                        </div>
+	                                        <div class="lyinfo">
+	                                            <div class="mood">
+	                                                <img src="images/s1.gif" border="0" />
+	                                            </div>
+	                                            <div class="bdinfo2">????</div>
+	                                        </div>
+	                                        <div class="hfinfo">
+	                                            <div class="hf" style="display:none;">版主回复：</div>
+	                                            <div class="hfanswer" style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	                                        </div>
+	                                        <div class="btinfo">
+	                                            <img src="images/posttime.gif" border="0" />&nbsp;&nbsp;<s:property value="noteTime" />&nbsp;&nbsp;&nbsp;&nbsp;
+	                                            <img src="images/ip.gif" border="0" />&nbsp;&nbsp;222.78.129.168
+	                                        </div>
+	                                    </div>
+	
+	                                </div>
+	
+	                            </div>
+	
+	                            <!-- <div id="showpages">
+	                                <div id="pagesinfo">共60个职位 每页10个 页次：1/6</div>
+	                                <div id="pages">
+	                                    <ul>
+	                                        <li class="pbutton"><a href=/1258520704/guestbook/index.php?page=1&amp;key=>首页</a>
+	                                        </li>
+	                                        <li class="pbutton">上一页</li>
+	                                        <li class="pagesnow">1</li>
+	                                        <li><a href=/1258520704/guestbook/index.php?page=2&amp;key=>2</a>
+	                                        </li>
+	                                        <li><a href=/1258520704/guestbook/index.php?page=3&amp;key=>3</a>
+	                                        </li>
+	                                        <li><a href=/1258520704/guestbook/index.php?page=4&amp;key=>4</a>
+	                                        </li>
+	                                        <li><a href=/1258520704/guestbook/index.php?page=5&amp;key=>5</a>
+	                                        </li>
+	                                        <li><a href=/1258520704/guestbook/index.php?page=6&amp;key=>6</a>
+	                                        </li>
+	                                        <li class="pbutton"><a href=/1258520704/guestbook/index.php?page=2&amp;key=>下一页</a>
+	                                        </li>
+	                                        <li class="opt">
+	                                            <select onChange="window.location=this.options[this.selectedIndex].value">
+	                                                <option value="/1258520704/guestbook/index.php?page=1&amp;key=" selected>第1页</option>
+	                                                <option value="/1258520704/guestbook/index.php?page=2&amp;key=">第2页</option>
+	                                                <option value="/1258520704/guestbook/index.php?page=3&amp;key=">第3页</option>
+	                                                <option value="/1258520704/guestbook/index.php?page=4&amp;key=">第4页</option>
+	                                                <option value="/1258520704/guestbook/index.php?page=5&amp;key=">第5页</option>
+	                                                <option value="/1258520704/guestbook/index.php?page=6&amp;key=">第6页</option>
+	                                            </select>
+	                                        </li>
+	                                        <li class="pbutton"><a href=/1258520704/guestbook/index.php?page=6&amp;key=>尾页</a>
+	                                        </li>
+	                                    </ul>
+	                                </div>
+	                            </div> -->
+	
+	
+	                        </div>
+                        </s:iterator>
+                        
+                        
+                        <div id="showpages">
                                 <div id="pagesinfo">共60个职位 每页10个 页次：1/6</div>
                                 <div id="pages">
                                     <ul>
@@ -137,9 +169,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     </ul>
                                 </div>
                             </div>
-
-
-                        </div>
                     </div>
 
                 </div>
