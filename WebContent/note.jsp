@@ -84,7 +84,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	                                            <div class="hfanswer" style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
 	                                        </div>
 	                                        <div class="btinfo">
-	                                            <img src="images/posttime.gif" border="0" />&nbsp;&nbsp;<s:property value="noteTime" />&nbsp;&nbsp;&nbsp;&nbsp;
+	                                            <img src="images/posttime.gif" border="0" />&nbsp;&nbsp;<s:date name="noteTime" />&nbsp;&nbsp;&nbsp;&nbsp;
 	                                            <img src="images/ip.gif" border="0" />&nbsp;&nbsp;222.78.129.168
 	                                        </div>
 	                                    </div>

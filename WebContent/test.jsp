@@ -12,11 +12,13 @@
 	<div>
 		<table>
 			<tr>
-				<th>NO</th>
+				<th>noteTime1</th>
+				<th>noteTime2</th>
 			</tr>
 			<s:iterator value="#request.noteList">
 				<tr>
-					<td><s:property value="noteId" /></td>
+					<td><s:date name="noteTime" /></td>
+					<td><s:property value="noteTime" /></td>
 				</tr>
 			</s:iterator>
 		</table>
