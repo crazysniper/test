@@ -28,7 +28,7 @@
 		</action>
 		<action name = "notelist" class = "com.dinner.gts.action.NoteAction" method="findNote">
 			<!-- <result name="success">/test.jsp</result> -->
-			<result name="success">/test.jsp</result>
+			<result name="success">/note.jsp</result>
 		</action>
 	</package>
 </struts>
