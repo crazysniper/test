@@ -7,12 +7,14 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
 	private TextView tv;
 	private EditText et1, et2, et3;
+	private RadioButton rb;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +72,11 @@ public class MainActivity extends Activity {
 		startActivity(intent);
 	}
 
+	
+	public void toDatePicker(View view){
+		startActivity(new Intent(this,DatePickerDemo.class));
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.main, menu);

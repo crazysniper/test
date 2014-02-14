@@ -15,5 +15,7 @@
     <string name="inputtext">输入下面的值来传到下一个画面</string>
     <string name="et2">只能输入数字</string>
     <string name="et3">第二个</string>
-
+    <string name="xxx">学历是:</string>
+	<string name="toDatePicker">DatePicker</string>
+    
 </resources>

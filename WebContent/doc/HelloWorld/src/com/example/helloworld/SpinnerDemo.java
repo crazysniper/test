@@ -31,8 +31,8 @@ public class SpinnerDemo extends Activity {
 		receivedata2 =(TextView)findViewById(R.id.receivedata2);
 		sp = (Spinner) findViewById(R.id.sp);
 		adapter =new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, m);
-		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		sp.setAdapter(adapter);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);	// 设置列表项的显示风格
+		sp.setAdapter(adapter); // 设置显示信息
 		sp.setOnItemSelectedListener(new SpinnerSelectedListener());
 		sp.setVisibility(View.VISIBLE);
 	}
