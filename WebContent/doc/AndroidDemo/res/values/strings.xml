@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- Layout -->
+    <string name="toLayout">转到布局</string>
+    <string name="toLinearLayout">转到线性布局</string>
+    <string name="toRelativeLayout">转到相对布局</string>
+    <string name="toTableLayout">转到表格布局</string>
+    <string name="toFrameLayout">转到帧布局</string>
+    <string name="linearLayout">这个是线性布局</string>
+    <string name="relativeLayout">这个是相对布局</string>
+    <string name="tableLayout">这个是表格布局</string>
+    <string name="frameLayout">这个是帧布局</string>
+    <string name="showtoast">显示提示信息</string>
+    <!-- LinearLayout -->
+    <string name="linearbtn1">线性按钮1</string>
+    <string name="linearbtn2">线性按钮2</string>
+    <string name="linearbtn3">线性按钮3</string>
+    <string name="linearbtn4">线性按钮4</string>
+    <string name="linearwarn">后面的第四个Button已经被挡住</string>
+    <!-- TableLayout -->
+    <string name="username">用户名</string>
+    <string name="inputusername">请输入用户名</string>
+    <string name="password">密码</string>
+    <string name="inputnumberpassword">只能输入数字密码</string>
+    <string name="number">数字</string>
+    <string name="inputnumber">只能输入数字</string>
+    <string name="regiser">注册</string>
+
+    <!-- AdapterAndListView -->
+    <string name="toAdapterAndListView">转到Adapter和ListVew</string>
+    <string name="toArrayAdapter">转到ArrayAdapter</string>
+     <string name="toSimpleAdapter">转到SimpleAdapter</string>
+    <string name="toEntries">直接用entries</string>
+    <string name="toNoEntries">不用entries</string>
+
+</resources>
