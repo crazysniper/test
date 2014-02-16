@@ -57,6 +57,7 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
+        public static final int bindService=0x7f060025;
         public static final int frameLayout=0x7f06000b;
         public static final int hello_world=0x7f060002;
         public static final int inputnumber=0x7f060017;
@@ -75,13 +76,16 @@ public final class R {
         public static final int regiser=0x7f060018;
         public static final int relativeLayout=0x7f060009;
         public static final int showtoast=0x7f06000c;
+        public static final int startService=0x7f060020;
         public static final int tableLayout=0x7f06000a;
         /**  AdapterAndListView 
          */
         public static final int toAdapterAndListView=0x7f060019;
         public static final int toArrayAdapter=0x7f06001a;
+        public static final int toBindThirdService=0x7f060026;
         public static final int toEntries=0x7f06001c;
         public static final int toFrameLayout=0x7f060007;
+        public static final int toGetThirdServiceStatus=0x7f060028;
         /**  Layout 
          */
         public static final int toLayout=0x7f060003;
@@ -95,11 +99,12 @@ public final class R {
          */
         public static final int toService=0x7f06001f;
         public static final int toSimpleAdapter=0x7f06001b;
-        public static final int toStartFirstService=0x7f060020;
-        public static final int toStartSecondService=0x7f060022;
-        public static final int toStopFirstService=0x7f060021;
-        public static final int toStopSecondService=0x7f060023;
+        public static final int toStartFirstService=0x7f060021;
+        public static final int toStartSecondService=0x7f060023;
+        public static final int toStopFirstService=0x7f060022;
+        public static final int toStopSecondService=0x7f060024;
         public static final int toTableLayout=0x7f060006;
+        public static final int toUnBindThirdService=0x7f060027;
         /**  TableLayout 
          */
         public static final int username=0x7f060012;

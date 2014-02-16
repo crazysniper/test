@@ -4,6 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/startService" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,4 +33,26 @@
         android:onClick="toStopSecondService"
         android:text="@string/toStopSecondService" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bindService" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toBindThirdService"
+        android:text="@string/toBindThirdService" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toUnBindThirdService"
+        android:text="@string/toUnBindThirdService" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toGetThirdServiceStatus"
+        android:text="@string/toGetThirdServiceStatus" />
 </LinearLayout>

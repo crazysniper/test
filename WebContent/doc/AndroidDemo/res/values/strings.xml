@@ -42,9 +42,14 @@
 
     <!-- Service -->
     <string name="toService">转到Service</string>
+    <string name="startService">用startService启动Service</string>
     <string name="toStartFirstService">启动第一个Service</string>
     <string name="toStopFirstService">关闭第一个Service</string>
     <string name="toStartSecondService">启动第二个Service</string>
     <string name="toStopSecondService">关闭第二个Service</string>
+    <string name="bindService">用bindService启动Service</string>
+    <string name="toBindThirdService">绑定第三个Service</string>
+    <string name="toUnBindThirdService">解绑第三个Service</string>
+    <string name="toGetThirdServiceStatus">获取第三个Service允许状态</string>
 
 </resources>

@@ -45,12 +45,16 @@
         <activity android:name="com.androiddemo.servicedemo.ServiceActivity" >
         </activity>
 
+        <!-- 注册Service -->
         <service android:name="com.androiddemo.servicedemo.FirstService" />
         <service android:name="com.androiddemo.servicedemo.SecondService" >
             <intent-filter>
+
                 <!-- 为该Service组件的intent-filter配置action -->
-                <action android:name="com.androirdemo.secondservice"/>
+                <action android:name="com.androirdemo.secondservice" />
             </intent-filter>
+        </service>
+        <service android:name="com.androiddemo.servicedemo.ThirdService" >
         </service>
     </application>
 
