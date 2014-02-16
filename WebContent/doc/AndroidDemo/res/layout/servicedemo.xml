@@ -7,25 +7,25 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="toLayout"
-        android:text="@string/toLayout" />
+        android:onClick="toStartFirstService"
+        android:text="@string/toStartFirstService" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="toAdapterAndListView"
-        android:text="@string/toAdapterAndListView" />
+        android:onClick="toStopFirstService"
+        android:text="@string/toStopFirstService" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="toSDCard"
-        android:text="@string/toSDCard" />
+        android:onClick="toStartSecondService"
+        android:text="@string/toStartSecondService" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="toService"
-        android:text="@string/toService" />
+        android:onClick="toStopSecondService"
+        android:text="@string/toStopSecondService" />
 
 </LinearLayout>

@@ -27,12 +27,13 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090006;
-        public static final int desc=0x7f090004;
+        public static final int action_settings=0x7f090007;
+        public static final int desc=0x7f090005;
         public static final int list1=0x7f090000;
-        public static final int name=0x7f090003;
-        public static final int password=0x7f090005;
-        public static final int simpleadapterlist=0x7f090002;
+        public static final int name=0x7f090004;
+        public static final int password=0x7f090006;
+        public static final int simpleadapterlist=0x7f090003;
+        public static final int textView=0x7f090002;
         public static final int toRelativeLayout=0x7f090001;
     }
     public static final class layout {
@@ -44,9 +45,11 @@ public final class R {
         public static final int layout=0x7f030005;
         public static final int linearlayout=0x7f030006;
         public static final int relativelayout=0x7f030007;
-        public static final int simpleadapter=0x7f030008;
-        public static final int simpleadapteritem=0x7f030009;
-        public static final int tablelayout=0x7f03000a;
+        public static final int sdcard=0x7f030008;
+        public static final int servicedemo=0x7f030009;
+        public static final int simpleadapter=0x7f03000a;
+        public static final int simpleadapteritem=0x7f03000b;
+        public static final int tablelayout=0x7f03000c;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -85,7 +88,17 @@ public final class R {
         public static final int toLinearLayout=0x7f060004;
         public static final int toNoEntries=0x7f06001d;
         public static final int toRelativeLayout=0x7f060005;
+        /**  SDCard 
+         */
+        public static final int toSDCard=0x7f06001e;
+        /**  Service 
+         */
+        public static final int toService=0x7f06001f;
         public static final int toSimpleAdapter=0x7f06001b;
+        public static final int toStartFirstService=0x7f060020;
+        public static final int toStartSecondService=0x7f060022;
+        public static final int toStopFirstService=0x7f060021;
+        public static final int toStopSecondService=0x7f060023;
         public static final int toTableLayout=0x7f060006;
         /**  TableLayout 
          */

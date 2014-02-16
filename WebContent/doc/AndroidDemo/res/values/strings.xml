@@ -33,8 +33,18 @@
     <!-- AdapterAndListView -->
     <string name="toAdapterAndListView">转到Adapter和ListVew</string>
     <string name="toArrayAdapter">转到ArrayAdapter</string>
-     <string name="toSimpleAdapter">转到SimpleAdapter</string>
+    <string name="toSimpleAdapter">转到SimpleAdapter</string>
     <string name="toEntries">直接用entries</string>
     <string name="toNoEntries">不用entries</string>
+
+    <!-- SDCard -->
+    <string name="toSDCard">转到sdcard</string>
+
+    <!-- Service -->
+    <string name="toService">转到Service</string>
+    <string name="toStartFirstService">启动第一个Service</string>
+    <string name="toStopFirstService">关闭第一个Service</string>
+    <string name="toStartSecondService">启动第二个Service</string>
+    <string name="toStopSecondService">关闭第二个Service</string>
 
 </resources>
