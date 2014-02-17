@@ -10,8 +10,8 @@ public class FirstService extends Service {
 	private static final String TAG = "FirstService";
 	
 	/**
-	 * ¸Ã·½·¨ÊÇService×ÓÀà±ØĞëÊµÏÖµÄ·½·¨
-	 * ·µ»ØÒ»¸öIBinder¶ÔÏó£¬Ó¦ÓÃ³ÌĞò¿ÉÒÔÍ¨¹ı¸Ã¶ÔÏóÓëService×é¼şÍ¨ĞÅ
+	 * è¯¥æ–¹æ³•æ˜¯Serviceå­ç±»å¿…é¡»å®ç°çš„æ–¹æ³•
+	 * è¿”å›ä¸€ä¸ªIBinderå¯¹è±¡ï¼Œåº”ç”¨ç¨‹åºå¯ä»¥é€šè¿‡è¯¥å¯¹è±¡ä¸Serviceç»„ä»¶é€šä¿¡
 	 */
 	@Override
 	public IBinder onBind(Intent intent) {
@@ -20,9 +20,9 @@ public class FirstService extends Service {
 	}
 	
 	/**
-	 * Èç¹ûService»¹Ã»ÓĞÔËĞĞ£¬ÔòÏÈµ÷ÓÃonCreate()£¬È»ºóµ÷ÓÃonStartCommand£¬£¬¾É°æ±¾µ÷ÓÃonStart()
-	 * Èç¹ûÒÑ¾­ÔËĞĞ£¬ÔòÖ»Òªµ÷ÓÃonStartCommand£¬£¬¾É°æ±¾µ÷ÓÃonStart()
-	 * ËùÓĞÒ»¸öServiceµÄonStart()¿ÉÄÜ»áÖØ¸´µ÷ÓÃ¶à´Î
+	 * å¦‚æœServiceè¿˜æ²¡æœ‰è¿è¡Œï¼Œåˆ™å…ˆè°ƒç”¨onCreate()ï¼Œç„¶åè°ƒç”¨onStartCommandï¼Œï¼Œæ—§ç‰ˆæœ¬è°ƒç”¨onStart()
+	 * å¦‚æœå·²ç»è¿è¡Œï¼Œåˆ™åªè¦è°ƒç”¨onStartCommandï¼Œï¼Œæ—§ç‰ˆæœ¬è°ƒç”¨onStart()
+	 * æ‰€æœ‰ä¸€ä¸ªServiceçš„onStart()å¯èƒ½ä¼šé‡å¤è°ƒç”¨å¤šæ¬¡
 	 */
 	@Override
 	public void onCreate() {
@@ -32,8 +32,8 @@ public class FirstService extends Service {
 	}
 	
 	/**
-	 * ¸Ã·½·¨ÔçÆğ°æ±¾ÊÇonStart(Intent intent, int startId)
-	 * Ã¿´Î¿Í»§¶Ëµ÷ÓÃstartService(intent)·½·¨Æô¶¯¸ÃServiceÊ±£¬¶¼»á»Øµ÷´Î·½·¨
+	 * è¯¥æ–¹æ³•æ—©èµ·ç‰ˆæœ¬æ˜¯onStart(Intent intent, int startId)
+	 * æ¯æ¬¡å®¢æˆ·ç«¯è°ƒç”¨startService(intent)æ–¹æ³•å¯åŠ¨è¯¥Serviceæ—¶ï¼Œéƒ½ä¼šå›è°ƒæ¬¡æ–¹æ³•
 	 */
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {

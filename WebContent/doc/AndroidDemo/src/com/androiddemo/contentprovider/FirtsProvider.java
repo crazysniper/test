@@ -8,9 +8,9 @@ import android.net.Uri;
 public class FirtsProvider extends ContentProvider {
 
 	/**
-	 * ¸Ã·½·¨ÔÚContentProvider´´½¨ºó»á±»µ÷ÓÃ¡£
-	 * µ±ÆäËûapplicationµÚÒ»´Î·ÃÎÊContentProviderÊ±£¬¸ÃContentProvider»á±»´´½¨³öÀ´
-	 * ²¢Á¢¼´µ÷ÓÃ¸ÃonCreate()·½·¨
+	 * è¯¥æ–¹æ³•åœ¨ContentProvideråˆ›å»ºåä¼šè¢«è°ƒç”¨ã€‚
+	 * å½“å…¶ä»–applicationç¬¬ä¸€æ¬¡è®¿é—®ContentProvideræ—¶ï¼Œè¯¥ContentProviderä¼šè¢«åˆ›å»ºå‡ºæ¥
+	 * å¹¶ç«‹å³è°ƒç”¨è¯¥onCreate()æ–¹æ³•
 	 */
 	@Override
 	public boolean onCreate() {
@@ -18,8 +18,8 @@ public class FirtsProvider extends ContentProvider {
 	}
 
 	/**
-	 * ¸ù¾İUri²éÑ¯³öselectÌõ¼şËùÆ¥ÅäµÄÈ«²¿¼ÇÂ¼£¬ÆäÖĞprojectionÊÇÒ»¸öÁĞÃûÁĞ±í£¬±íÃ÷Ö»»áÑ¡Ôñ³öÖ¸¶¨µÄÊı¾İÁĞ
-	 * ·µ»Ø²éÑ¯µÃµ½µÄCursor
+	 * æ ¹æ®UriæŸ¥è¯¢å‡ºselectæ¡ä»¶æ‰€åŒ¹é…çš„å…¨éƒ¨è®°å½•ï¼Œå…¶ä¸­projectionæ˜¯ä¸€ä¸ªåˆ—ååˆ—è¡¨ï¼Œè¡¨æ˜åªä¼šé€‰æ‹©å‡ºæŒ‡å®šçš„æ•°æ®åˆ—
+	 * è¿”å›æŸ¥è¯¢å¾—åˆ°çš„Cursor
 	 */
 	@Override
 	public Cursor query(Uri uri, String[] projection, String selection,
@@ -28,7 +28,7 @@ public class FirtsProvider extends ContentProvider {
 	}
 
 	/**
-	 * ·µ»Ø¸ÃContentProviderËùÌá¹©Êı¾İµÄMIMEÀàĞÍ
+	 * è¿”å›è¯¥ContentProvideræ‰€æä¾›æ•°æ®çš„MIMEç±»å‹
 	 */
 	@Override
 	public String getType(Uri uri) {
@@ -36,7 +36,7 @@ public class FirtsProvider extends ContentProvider {
 	}
 	
 	/**
-	 * ¸ù¾İ¸ÃUri²åÈëvalues¶ÔÓ¦µÄÊı¾İ
+	 * æ ¹æ®è¯¥Uriæ’å…¥valueså¯¹åº”çš„æ•°æ®
 	 */
 	@Override
 	public Uri insert(Uri uri, ContentValues values) {
@@ -44,8 +44,8 @@ public class FirtsProvider extends ContentProvider {
 	}
 
 	/**
-	 * ¸ù¾İUriÉ¾³ıselectÌõ¼şËùÆ¥ÅäµÄÈ«²¿¼ÇÂ¼
-	 * ·µ»Ø±»É¾³ıµÄ¼ÇÂ¼ÌõÊı
+	 * æ ¹æ®Uriåˆ é™¤selectæ¡ä»¶æ‰€åŒ¹é…çš„å…¨éƒ¨è®°å½•
+	 * è¿”å›è¢«åˆ é™¤çš„è®°å½•æ¡æ•°
 	 */
 	@Override
 	public int delete(Uri uri, String selection, String[] selectionArgs) {
@@ -53,8 +53,8 @@ public class FirtsProvider extends ContentProvider {
 	}
 
 	/**
-	 * ¸ù¾İUriĞŞ¸ÄselectÌõ¼şËùÆ¥ÅäµÄÈ«²¿¼ÇÂ¼
-	 * ·µ»Ø¸üĞÂµÄ¼ÇÂ¼ÌõÊı
+	 * æ ¹æ®Uriä¿®æ”¹selectæ¡ä»¶æ‰€åŒ¹é…çš„å…¨éƒ¨è®°å½•
+	 * è¿”å›æ›´æ–°çš„è®°å½•æ¡æ•°
 	 */
 	@Override
 	public int update(Uri uri, ContentValues values, String selection,

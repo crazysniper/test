@@ -28,28 +28,28 @@ public class SDCardActivity extends Activity {
 
 	public void initView() {
 		String result = "";
-		// »ñÈ¡ÎÄ¼şÄ¬ÈÏ´æ´¢Î»ÖÃµÄ¾ø¶ÔÂ·¾¶
+		// è·å–æ–‡ä»¶é»˜è®¤å­˜å‚¨ä½ç½®çš„ç»å¯¹è·¯å¾„
 		File fileDir = this.getFilesDir();
-		Log.i("ÎÄ¼şÂ·¾¶", fileDir.getPath());
-		result += "ÎÄ¼şÂ·¾¶ \n fileDir.getPath():" + fileDir.getPath();
-		result += "\n fileDir.getAbsolutePath()£º" + fileDir.getAbsolutePath();
+		Log.i("æ–‡ä»¶è·¯å¾„", fileDir.getPath());
+		result += "æ–‡ä»¶è·¯å¾„ \n fileDir.getPath():" + fileDir.getPath();
+		result += "\n fileDir.getAbsolutePath()ï¼š" + fileDir.getAbsolutePath();
 		result += "\n fileDir.getName():" + fileDir.getName();
 
-		// »ñÈ¡Íâ²¿´æ´¢Éè±¸µÄµ±Ç°×´Ì¬
+		// è·å–å¤–éƒ¨å­˜å‚¨è®¾å¤‡çš„å½“å‰çŠ¶æ€
 		String externalStorageState = Environment.getExternalStorageState();
-		// Environment.MEDIA_MOUNTED´ú±í×ÅÍâ²¿´æ´¢Éè±¸´æÔÚ£¬²¢ÇÒÊÇ¿É¶ÁĞ´µÄ
+		// Environment.MEDIA_MOUNTEDä»£è¡¨ç€å¤–éƒ¨å­˜å‚¨è®¾å¤‡å­˜åœ¨ï¼Œå¹¶ä¸”æ˜¯å¯è¯»å†™çš„
 		if (externalStorageState.equals(Environment.MEDIA_MOUNTED)) {
-			// getExternalStorageDirectory»ñÈ¡Íâ²¿´æ´¢Éè±¸µÄÂ·¾¶
-			Log.i("SDcardÂ·¾¶", Environment.getExternalStorageDirectory().getAbsolutePath());
+			// getExternalStorageDirectoryè·å–å¤–éƒ¨å­˜å‚¨è®¾å¤‡çš„è·¯å¾„
+			Log.i("SDcardè·¯å¾„", Environment.getExternalStorageDirectory().getAbsolutePath());
 			File file = new File(Environment.getExternalStorageDirectory(), "chenzheng_java.txt");
-			result += "   sdcard¾ø¶ÔÂ·¾¶£º" + Environment.getExternalStorageDirectory().getAbsolutePath();
-			result += " \n  sdcardÂ·¾¶£º" + Environment.getExternalStorageDirectory().getPath();
+			result += "   sdcardç»å¯¹è·¯å¾„ï¼š" + Environment.getExternalStorageDirectory().getAbsolutePath();
+			result += " \n  sdcardè·¯å¾„ï¼š" + Environment.getExternalStorageDirectory().getPath();
 			if (!file.exists()) {
 				try {
 					file.createNewFile();
-					Log.i("½á¹û", "´´½¨³É¹¦¡£");
+					Log.i("ç»“æœ", "åˆ›å»ºæˆåŠŸã€‚");
 				} catch (IOException e) {
-					Log.i("½á¹û", "´´½¨Ã»³É¹¦¡£");
+					Log.i("ç»“æœ", "åˆ›å»ºæ²¡æˆåŠŸã€‚");
 					e.printStackTrace();
 				}
 			}

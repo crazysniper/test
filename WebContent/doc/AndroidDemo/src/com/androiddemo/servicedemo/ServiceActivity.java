@@ -27,9 +27,9 @@ public class ServiceActivity extends Activity {
 	public void toStartFirstService(View view) {
 		Intent firstServiceIntent = new Intent(ServiceActivity.this,
 				FirstService.class);
-		// ֹͣService
+		// 停止Service
 		this.stopService(firstServiceIntent);
-		// ����Service ��startService()����Service
+		// 启动Service 用startService()启动Service
 		this.startService(firstServiceIntent);
 	}
 
@@ -43,9 +43,9 @@ public class ServiceActivity extends Activity {
 		Intent secondServiceIntent = new Intent(ServiceActivity.this,
 				SecondService.class);
 		secondServiceIntent.setAction("com.androirdemo.secondservice");
-		// ֹͣService
+		// 停止Service
 		// this.stopService(serviceIntent);
-		// ����Service
+		// 启动Service
 		this.startService(secondServiceIntent);
 	}
 
@@ -58,34 +58,34 @@ public class ServiceActivity extends Activity {
 
 	public void toBindThirdService(View view) {
 		Intent thirdServiceIntent = new Intent(ServiceActivity.this, ThirdService.class);
-		// ��Service  
+		// 绑定Service  
         bindService(thirdServiceIntent, conn, BIND_AUTO_CREATE); 
 	}
 	
 	
 	public void toUnBindThirdService(View view) {
-		// ���Service  
+		// 解绑Service  
         unbindService(conn); 
 	}
 
-	// ��ȡ�����Service����״̬
+	// 获取第三个Service允许状态
 	public void toGetThirdServiceStatus(View view){
-		Toast.makeText(this, "Service��countֵ�ǣ�"+binder.getCount(), Toast.LENGTH_LONG).show();
+		Toast.makeText(this, "Service的count值是："+binder.getCount(), Toast.LENGTH_LONG).show();
 	}
 	
-	// ������������Service��IBinder����
+	// 保持所启动的Service的IBinder对象
 	ThirdService.MyBinder binder;
-	// ����һ��ServiceConnection����
+	// 定义一个ServiceConnection对象
 	private ServiceConnection conn = new ServiceConnection() {
-		// ���ͻ�����Service��������ʱ���ص��÷���
+		// 当客户端与Service建立连接时，回调该方法
 		@Override
 		public void onServiceConnected(ComponentName name, IBinder service) {
 			System.out.println("---onServiceConnected----");
-			// ��ȡService��onBind������ص�MyBinder����
+			// 获取Service的onBind方法所返回的MyBinder对象
 			binder = (ThirdService.MyBinder) service;
 		}
 
-		// ���ͻ�����Service�Ͽ�����ʱ���ص��÷���
+		// 当客户端与Service断开连接时，回调该方法
 		@Override
 		public void onServiceDisconnected(ComponentName name) {
 			System.out.println("---onServiceDisconnected----");
@@ -93,6 +93,6 @@ public class ServiceActivity extends Activity {
 	};
 	
 	public void toMusic(View view){
-		startActivity(new Intent(this, PlayMusicActivity.class));
+		startActivity(new Intent(this,PlayMusicActivity.class));
 	}
 }

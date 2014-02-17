@@ -32,7 +32,7 @@
     <string name="number">数字</string>
     <string name="inputnumber">只能输入数字</string>
     <string name="regiser">注册</string>
-    <!-- Spinner -->
+    <!-- Spinner -->
     <string name="spinnnerdemo">下拉列表示例</string>
     <string name="showchoosespinnner">选择的血型是：</string>
     <string name="subject">科目如下：</string>
@@ -41,7 +41,7 @@
     <string name="search_key">请输入搜索关键字</string>
     <string name="search_btn">开始检索</string>
     <string name="imagedescription">图片描述(ImageView必须要有)</string>
-    
+
     <!-- AdapterAndListView -->
     <string name="toAdapterAndListView">转到Adapter和ListVew</string>
     <string name="toArrayAdapter">转到ArrayAdapter</string>
@@ -64,5 +64,10 @@
     <string name="toUnBindThirdService">解绑第三个Service</string>
     <string name="toGetThirdServiceStatus">获取第三个Service允许状态</string>
     <string name="toMusic">转向音乐</string>
+
+    <!-- SharedPreferences -->
+    <string name="to_SharedPreferences">转到SharedPreferences</string>
+    <string name="read_SharedPreferences">开始读SharedPreferences</string>
+    <string name="write_SharedPreferences">开始写SharedPreferences</string>
 
 </resources>

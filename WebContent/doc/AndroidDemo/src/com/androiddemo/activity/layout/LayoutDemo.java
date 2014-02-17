@@ -11,7 +11,7 @@ import android.widget.Toast;
 import com.androiddemo.activity.R;
 
 /**
- * ���ֹ���
+ * 布局管理
  * 
  * @author Gao
  * 
@@ -60,7 +60,7 @@ public class LayoutDemo extends Activity {
 
 	// 显示Toast
 	public void toShowToast(View view) {
-		Toast.makeText(this, "��ʾ��ʾ��Ϣ", Toast.LENGTH_LONG).show();
+		Toast.makeText(this, "显示提示信息", Toast.LENGTH_LONG).show();
 	}
 
 	// 下拉列表

@@ -20,8 +20,8 @@ public class ArrayAdapterDemo extends Activity {
 
 	public void initView() {
 		list1 = (ListView) findViewById(R.id.list1);
-		String[] arr1 = { "�����", "��˽�", "ɳ����" };
-		// �ڶ����������б������
+		String[] arr1 = { "孙悟空", "猪八戒", "沙和尚" };
+		// 第二个参数是列表项组件
 		ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,
 				R.layout.array_item, arr1);
 		list1.setAdapter(adapter1);

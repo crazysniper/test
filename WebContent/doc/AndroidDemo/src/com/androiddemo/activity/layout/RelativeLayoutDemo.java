@@ -6,7 +6,7 @@ import android.os.Bundle;
 import com.androiddemo.activity.R;
 
 /**
- * 相对布局
+ * 鐩稿甯冨眬
  * @author Gao
  *
  */

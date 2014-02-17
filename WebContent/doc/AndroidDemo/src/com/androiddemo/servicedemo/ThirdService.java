@@ -11,12 +11,12 @@ public class ThirdService extends Service {
 	private int count;
 	private boolean quit;
 	private static final String TAG = "ThirdService";
-	// ¶¨ÒåonBinder·½·¨Ëù·µ»ØµÄ¶ÔÏó
+	// å®šä¹‰onBinderæ–¹æ³•æ‰€è¿”å›çš„å¯¹è±¡
 	private MyBinder binder = new MyBinder();
 
 	/**
-	 * Í¨¹ı¼Ì³ĞBinderÀ´ÊµÏÖIBinder
-	 * ĞÂ½¨Ò»¸öBinder¶ÔÏóÓÃÓÚÌá¹©¸ø¿Í»§¶Ë
+	 * é€šè¿‡ç»§æ‰¿Binderæ¥å®ç°IBinder
+	 * æ–°å»ºä¸€ä¸ªBinderå¯¹è±¡ç”¨äºæä¾›ç»™å®¢æˆ·ç«¯
 	 */
 	public class MyBinder extends Binder {
 		public int getCount() {
@@ -25,11 +25,11 @@ public class ThirdService extends Service {
 	}
 
 	/**
-	 * ¸Ã·½·¨ÊÇService×ÓÀà±ØĞëÊµÏÖµÄ·½·¨ ·µ»ØÒ»¸öIBinder¶ÔÏó£¬Ó¦ÓÃ³ÌĞò¿ÉÒÔÍ¨¹ı¸Ã¶ÔÏóÓëService×é¼şÍ¨ĞÅ
+	 * è¯¥æ–¹æ³•æ˜¯Serviceå­ç±»å¿…é¡»å®ç°çš„æ–¹æ³• è¿”å›ä¸€ä¸ªIBinderå¯¹è±¡ï¼Œåº”ç”¨ç¨‹åºå¯ä»¥é€šè¿‡è¯¥å¯¹è±¡ä¸Serviceç»„ä»¶é€šä¿¡
 	 */
 	@Override
 	public IBinder onBind(Intent intent) {
-		// ·µ»Ø¸ø¿Í»§¶ËÒ»¸öBinder¶ÔÏó
+		// è¿”å›ç»™å®¢æˆ·ç«¯ä¸€ä¸ªBinderå¯¹è±¡
 		Log.e(TAG, "on bind");
 		return binder;
 	}
@@ -37,7 +37,7 @@ public class ThirdService extends Service {
 	@Override
 	public void onCreate() {
 		System.out.println("----onCreate-----");
-		// Æô¶¯Ò»ÌõÏß³Ì£¬¶¯Ì¬ĞŞ¸Äcount×´Ì¬Öµ
+		// å¯åŠ¨ä¸€æ¡çº¿ç¨‹ï¼ŒåŠ¨æ€ä¿®æ”¹countçŠ¶æ€å€¼
 		new Thread() {
 			@Override
 			public void run() {
@@ -53,7 +53,7 @@ public class ThirdService extends Service {
 	}
 
 	/**
-	 * Service±»¶Ï¿ªÁ¬½ÓÊ±»Øµ÷¸Ã·½·¨
+	 * Serviceè¢«æ–­å¼€è¿æ¥æ—¶å›è°ƒè¯¥æ–¹æ³•
 	 */
 	@Override
 	public boolean onUnbind(Intent intent) {
@@ -62,7 +62,7 @@ public class ThirdService extends Service {
 	}
 
 	/**
-	 * Service±»¹Ø±ÕÖ®Ç°»Øµ÷¸Ã·½·¨
+	 * Serviceè¢«å…³é—­ä¹‹å‰å›è°ƒè¯¥æ–¹æ³•
 	 */
 	@Override
 	public void onDestroy() {

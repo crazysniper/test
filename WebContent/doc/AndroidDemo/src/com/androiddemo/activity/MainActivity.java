@@ -10,14 +10,16 @@ import android.view.Menu;
 import android.view.View;
 
 import com.androiddemo.activity.layout.LayoutDemo;
+import com.androiddemo.data_storage.sharedPreferences_demo.SharedPreferencesActivity;
 import com.androiddemo.listview.AdapterAndListView;
 import com.androiddemo.sdcard.SDCardActivity;
 import com.androiddemo.servicedemo.ServiceActivity;
 
 /**
- * Ö÷½çÃæ
+ * ä¸»ç•Œé¢
+ * 
  * @author Gao
- *
+ * 
  */
 public class MainActivity extends Activity {
 
@@ -32,30 +34,36 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	
-	public void toLayout(View view){
-		startActivity(new Intent(this,LayoutDemo.class));
-	}
-	public void toAdapterAndListView(View view){
-		startActivity(new Intent(this,AdapterAndListView.class));
-	}
-	public void toSDCard(View view){
-		startActivity(new Intent(this,SDCardActivity.class));
+
+	// å¸ƒå±€ç”»é¢
+	public void toLayout(View view) {
+		startActivity(new Intent(this, LayoutDemo.class));
 	}
 
-	public void toService(View view){
-		startActivity(new Intent(this,ServiceActivity.class));
+	// Adapterå’ŒListView
+	public void toAdapterAndListView(View view) {
+		startActivity(new Intent(this, AdapterAndListView.class));
 	}
-	
-	// Back·µ»Ø¼üµÄ´¦Àí
+
+	// sdå¡
+	public void toSDCard(View view) {
+		startActivity(new Intent(this, SDCardActivity.class));
+	}
+
+	// ServiceæœåŠ¡
+	public void toService(View view) {
+		startActivity(new Intent(this, ServiceActivity.class));
+	}
+
+	// Backè¿”å›é”®çš„å¤„ç†
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
 			new AlertDialog.Builder(this)
 
-					.setTitle("ÍË³ö³ÌĞò")
-					.setMessage("ÊÇ·ñÒªÍË³ö£¿")
-					.setPositiveButton("È·¶¨",
+					.setTitle("é€€å‡ºç¨‹åº")
+					.setMessage("æ˜¯å¦è¦é€€å‡ºï¼Ÿ")
+					.setPositiveButton("ç¡®å®š",
 							new DialogInterface.OnClickListener() {
 								@Override
 								public void onClick(DialogInterface dialog,
@@ -63,7 +71,7 @@ public class MainActivity extends Activity {
 									System.exit(0);
 								}
 							})
-					.setNegativeButton("È¡Ïû",
+					.setNegativeButton("å–æ¶ˆ",
 							new DialogInterface.OnClickListener() {
 								@Override
 								public void onClick(DialogInterface dialog,
@@ -72,5 +80,10 @@ public class MainActivity extends Activity {
 							}).create().show();
 		}
 		return super.onKeyDown(keyCode, event);
+	}
+	
+	// è½¬åˆ°SharedPreferences
+	public void to_SharedPreferences(View view){
+		startActivity(new Intent(this, SharedPreferencesActivity.class));
 	}
 }

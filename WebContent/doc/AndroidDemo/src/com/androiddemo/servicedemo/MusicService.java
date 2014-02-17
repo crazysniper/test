@@ -2,6 +2,8 @@ package com.androiddemo.servicedemo;
 
 import java.io.IOException;
 
+import com.androiddemo.activity.R;
+
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -30,7 +32,7 @@ public class MusicService extends Service {
 		if (mediaPlayer == null) {
 			// 在res文件夹下创建raw文件夹，之后，将视频或者音频文件拷贝到raw文件夹中，
 			// 在程序中引用的时候就可以写成R.raw.xxx(xxx：视频或音频的名称)
-//			mediaPlayer = MediaPlayer.create(this, R.raw.tmp);
+			mediaPlayer = MediaPlayer.create(this, R.raw.test1);
 			mediaPlayer.setLooping(false);
 		}
 	}

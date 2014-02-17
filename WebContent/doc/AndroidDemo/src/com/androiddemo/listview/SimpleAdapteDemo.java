@@ -17,7 +17,7 @@ public class SimpleAdapteDemo extends Activity {
 	private ListView simpleadapterlist;
 	private String[] names = { "Gao", "Li" };
 	private String[] desc = { "1111", "2222" };
-	private String[] password = { "ÃÜÂë1", "ÃÜÂë2" };
+	private String[] password = { "å¯†ç 1", "å¯†ç 2" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,16 +39,16 @@ public class SimpleAdapteDemo extends Activity {
 			listItem.add(map);
 		}
 		/**
-		 * SimpleAdapter µÚ¶ş¸ö²ÎÊıÊÇÁĞ±íÏîÖµ
-		 * µÚÈı·İ²ÎÊıÊÇitemµÄ»­Ãæ²¼¾Öid
-		 * µÚËÄ¸ö²ÎÊıÊÇString[]ÀàĞÍµÄ²ÎÊı£¬¸Ã²ÎÊı¾ö¶¨ÄÄĞ©key¶ÔÓÚµÄvalueÀ´Éú³ÉÁĞ±íÏî
-		 * µÚÎå¸ö²ÎÊıÊÇint[]ÀàĞÍµÄ²ÎÊı£¬¸Ã²ÎÊı¾ö¶¨Ìî³äÄÄĞ©×é¼ş
+		 * SimpleAdapter ç¬¬äºŒä¸ªå‚æ•°æ˜¯åˆ—è¡¨é¡¹å€¼
+		 * ç¬¬ä¸‰ä»½å‚æ•°æ˜¯itemçš„ç”»é¢å¸ƒå±€id
+		 * ç¬¬å››ä¸ªå‚æ•°æ˜¯String[]ç±»å‹çš„å‚æ•°ï¼Œè¯¥å‚æ•°å†³å®šå“ªäº›keyå¯¹äºçš„valueæ¥ç”Ÿæˆåˆ—è¡¨é¡¹
+		 * ç¬¬äº”ä¸ªå‚æ•°æ˜¯int[]ç±»å‹çš„å‚æ•°ï¼Œè¯¥å‚æ•°å†³å®šå¡«å……å“ªäº›ç»„ä»¶
 		 */
 		SimpleAdapter sa = new SimpleAdapter(this, listItem,
 				R.layout.simpleadapteritem, new String[] { "name", "desc",
 						"password" }, new int[] { R.id.name, R.id.desc,
 						R.id.password });
-		// ÎªListViewÉèÖÃadapter
+		// ä¸ºListViewè®¾ç½®adapter
 		simpleadapterlist.setAdapter(sa);
 	}
 }
