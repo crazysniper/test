@@ -11,7 +11,7 @@ import android.widget.Toast;
 import com.androiddemo.activity.R;
 
 /**
- * ���ֹ���
+ * ���ֹ���
  * 
  * @author Gao
  * 
@@ -36,26 +36,45 @@ public class LayoutDemo extends Activity {
 				// Intent intent =new Intent();
 				// intent.setClass(LayoutDemo.this, RelativeLayoutDemo.class);
 				// startActivity(intent);
-				startActivity(new Intent(LayoutDemo.this, RelativeLayoutDemo.class));
+				startActivity(new Intent(LayoutDemo.this,
+						RelativeLayoutDemo.class));
 			}
 		});
 	}
 
+	// 线性布局
 	public void toLinearLayout(View view) {
 		// startActivity(new Intent(LayoutDemo.this,LinearLayoutDemo.class));
 		startActivity(new Intent(this, LinearLayoutDemo.class));
 	}
 
+	// 表格布局
 	public void toTableLayout(View view) {
 		startActivity(new Intent(this, TableLayoutDemo.class));
 	}
 
+	// 帧布局
 	public void toFrameLayout(View view) {
 		startActivity(new Intent(this, FrameLayoutDemo.class));
 	}
 
+	// 显示Toast
 	public void toShowToast(View view) {
-		Toast.makeText(this, "��ʾ��ʾ��Ϣ", Toast.LENGTH_LONG).show();
+		Toast.makeText(this, "��ʾ��ʾ��Ϣ", Toast.LENGTH_LONG).show();
 	}
 
+	// 下拉列表
+	public void toSpinner(View view) {
+		startActivity(new Intent(this, SpinnerDemo.class));
+	}
+
+	// Tab选项卡
+	public void toTab(View view){
+		startActivity(new Intent(this, Tab_Demo.class));
+	}
+	
+	// DatePicker
+	public void toDatePickerAndTimePicker(View view){
+		startActivity(new Intent(this, DatePickerAndTimePickerDemo.class));
+	}
 }

@@ -15,6 +15,9 @@
     <string name="tableLayout">这个是表格布局</string>
     <string name="frameLayout">这个是帧布局</string>
     <string name="showtoast">显示提示信息</string>
+    <string name="toSpinner">下拉列表</string>
+    <string name="toTab">Tab选项卡</string>
+    <string name="toDatePickerAndTimePicker">DatePicker和TimePicker</string>
     <!-- LinearLayout -->
     <string name="linearbtn1">线性按钮1</string>
     <string name="linearbtn2">线性按钮2</string>
@@ -29,7 +32,16 @@
     <string name="number">数字</string>
     <string name="inputnumber">只能输入数字</string>
     <string name="regiser">注册</string>
+    <!-- Spinner -->
+    <string name="spinnnerdemo">下拉列表示例</string>
+    <string name="showchoosespinnner">选择的血型是：</string>
+    <string name="subject">科目如下：</string>
 
+    <!-- Tab -->
+    <string name="search_key">请输入搜索关键字</string>
+    <string name="search_btn">开始检索</string>
+    <string name="imagedescription">图片描述(ImageView必须要有)</string>
+    
     <!-- AdapterAndListView -->
     <string name="toAdapterAndListView">转到Adapter和ListVew</string>
     <string name="toArrayAdapter">转到ArrayAdapter</string>
@@ -51,5 +63,6 @@
     <string name="toBindThirdService">绑定第三个Service</string>
     <string name="toUnBindThirdService">解绑第三个Service</string>
     <string name="toGetThirdServiceStatus">获取第三个Service允许状态</string>
+    <string name="toMusic">转向音乐</string>
 
 </resources>

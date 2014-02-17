@@ -27,29 +27,47 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090007;
-        public static final int desc=0x7f090005;
+        public static final int action_settings=0x7f090015;
+        public static final int close=0x7f090009;
+        public static final int datepicker1=0x7f090001;
+        public static final int datepicker2=0x7f090002;
+        public static final int desc=0x7f09000d;
+        public static final int exit=0x7f090008;
+        public static final int img=0x7f090011;
         public static final int list1=0x7f090000;
-        public static final int name=0x7f090004;
-        public static final int password=0x7f090006;
-        public static final int simpleadapterlist=0x7f090003;
-        public static final int textView=0x7f090002;
-        public static final int toRelativeLayout=0x7f090001;
+        public static final int name=0x7f09000c;
+        public static final int password=0x7f09000e;
+        public static final int pause=0x7f090007;
+        public static final int personlist=0x7f090013;
+        public static final int play=0x7f090005;
+        public static final int search=0x7f090014;
+        public static final int showchoosespinnner=0x7f090010;
+        public static final int simpleadapterlist=0x7f09000b;
+        public static final int spinner=0x7f09000f;
+        public static final int stop=0x7f090006;
+        public static final int textView=0x7f09000a;
+        public static final int time=0x7f090012;
+        public static final int timepicker=0x7f090003;
+        public static final int toRelativeLayout=0x7f090004;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int adapterandlistview=0x7f030001;
+        public static final int adapter_and_listview=0x7f030001;
         public static final int array_item=0x7f030002;
-        public static final int arraylistviewdemo=0x7f030003;
-        public static final int framelayout=0x7f030004;
-        public static final int layout=0x7f030005;
-        public static final int linearlayout=0x7f030006;
-        public static final int relativelayout=0x7f030007;
-        public static final int sdcard=0x7f030008;
-        public static final int servicedemo=0x7f030009;
-        public static final int simpleadapter=0x7f03000a;
-        public static final int simpleadapteritem=0x7f03000b;
-        public static final int tablelayout=0x7f03000c;
+        public static final int array_listviewdemo=0x7f030003;
+        public static final int datepicker_and_timepickerdemo=0x7f030004;
+        public static final int framelayout=0x7f030005;
+        public static final int layout=0x7f030006;
+        public static final int linearlayout=0x7f030007;
+        public static final int music_service=0x7f030008;
+        public static final int relativelayout=0x7f030009;
+        public static final int sdcard=0x7f03000a;
+        public static final int servicedemo=0x7f03000b;
+        public static final int simpleadapter=0x7f03000c;
+        public static final int simpleadapteritem=0x7f03000d;
+        public static final int spinnerdemo=0x7f03000e;
+        public static final int tab_demo=0x7f03000f;
+        public static final int tablelayout=0x7f030010;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -57,57 +75,71 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
-        public static final int bindService=0x7f060025;
+        public static final int bindService=0x7f06002e;
         public static final int frameLayout=0x7f06000b;
         public static final int hello_world=0x7f060002;
-        public static final int inputnumber=0x7f060017;
-        public static final int inputnumberpassword=0x7f060015;
-        public static final int inputusername=0x7f060013;
+        public static final int imagedescription=0x7f060021;
+        public static final int inputnumber=0x7f06001a;
+        public static final int inputnumberpassword=0x7f060018;
+        public static final int inputusername=0x7f060016;
         public static final int linearLayout=0x7f060008;
         /**  LinearLayout 
          */
-        public static final int linearbtn1=0x7f06000d;
-        public static final int linearbtn2=0x7f06000e;
-        public static final int linearbtn3=0x7f06000f;
-        public static final int linearbtn4=0x7f060010;
-        public static final int linearwarn=0x7f060011;
-        public static final int number=0x7f060016;
-        public static final int password=0x7f060014;
-        public static final int regiser=0x7f060018;
+        public static final int linearbtn1=0x7f060010;
+        public static final int linearbtn2=0x7f060011;
+        public static final int linearbtn3=0x7f060012;
+        public static final int linearbtn4=0x7f060013;
+        public static final int linearwarn=0x7f060014;
+        public static final int number=0x7f060019;
+        public static final int password=0x7f060017;
+        public static final int regiser=0x7f06001b;
         public static final int relativeLayout=0x7f060009;
+        public static final int search_btn=0x7f060020;
+        /**  Tab 
+         */
+        public static final int search_key=0x7f06001f;
+        public static final int showchoosespinnner=0x7f06001d;
         public static final int showtoast=0x7f06000c;
-        public static final int startService=0x7f060020;
+        /**  Spinner 
+         */
+        public static final int spinnnerdemo=0x7f06001c;
+        public static final int startService=0x7f060029;
+        public static final int subject=0x7f06001e;
         public static final int tableLayout=0x7f06000a;
         /**  AdapterAndListView 
          */
-        public static final int toAdapterAndListView=0x7f060019;
-        public static final int toArrayAdapter=0x7f06001a;
-        public static final int toBindThirdService=0x7f060026;
-        public static final int toEntries=0x7f06001c;
+        public static final int toAdapterAndListView=0x7f060022;
+        public static final int toArrayAdapter=0x7f060023;
+        public static final int toBindThirdService=0x7f06002f;
+        public static final int toDatePickerAndTimePicker=0x7f06000f;
+        public static final int toEntries=0x7f060025;
         public static final int toFrameLayout=0x7f060007;
-        public static final int toGetThirdServiceStatus=0x7f060028;
+        public static final int toGetThirdServiceStatus=0x7f060031;
         /**  Layout 
          */
         public static final int toLayout=0x7f060003;
         public static final int toLinearLayout=0x7f060004;
-        public static final int toNoEntries=0x7f06001d;
+        public static final int toMusic=0x7f060032;
+        public static final int toNoEntries=0x7f060026;
         public static final int toRelativeLayout=0x7f060005;
         /**  SDCard 
          */
-        public static final int toSDCard=0x7f06001e;
+        public static final int toSDCard=0x7f060027;
         /**  Service 
          */
-        public static final int toService=0x7f06001f;
-        public static final int toSimpleAdapter=0x7f06001b;
-        public static final int toStartFirstService=0x7f060021;
-        public static final int toStartSecondService=0x7f060023;
-        public static final int toStopFirstService=0x7f060022;
-        public static final int toStopSecondService=0x7f060024;
+        public static final int toService=0x7f060028;
+        public static final int toSimpleAdapter=0x7f060024;
+        public static final int toSpinner=0x7f06000d;
+        public static final int toStartFirstService=0x7f06002a;
+        public static final int toStartSecondService=0x7f06002c;
+        public static final int toStopFirstService=0x7f06002b;
+        public static final int toStopSecondService=0x7f06002d;
+        public static final int toTab=0x7f06000e;
         public static final int toTableLayout=0x7f060006;
-        public static final int toUnBindThirdService=0x7f060027;
+        public static final int toUnBindThirdService=0x7f060030;
         /**  TableLayout 
          */
-        public static final int username=0x7f060012;
+        public static final int username=0x7f060015;
     }
     public static final class style {
         /** 

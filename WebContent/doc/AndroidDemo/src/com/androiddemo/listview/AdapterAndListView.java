@@ -11,7 +11,7 @@ public class AdapterAndListView extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.adapterandlistview);
+		setContentView(R.layout.adapter_and_listview);
 	}
 	
 	public void toArrayAdapter(View view){

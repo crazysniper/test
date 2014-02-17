@@ -14,14 +14,14 @@ public class ArrayAdapterDemo extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.arraylistviewdemo);
+		setContentView(R.layout.array_listviewdemo);
 		initView();
 	}
 
 	public void initView() {
 		list1 = (ListView) findViewById(R.id.list1);
-		String[] arr1 = { "ËïÎò¿Õ", "Öí°Ë½ä", "É³ºÍÉÐ" };
-		// µÚ¶þ¸ö²ÎÊýÊÇÁÐ±íÏî×é¼þ
+		String[] arr1 = { "ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½Ë½ï¿½", "É³ï¿½ï¿½ï¿½ï¿½" };
+		// ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,
 				R.layout.array_item, arr1);
 		list1.setAdapter(adapter1);

@@ -31,7 +31,25 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/showtoast"
-        android:onClick="toShowToast" />
+        android:onClick="toShowToast"
+        android:text="@string/showtoast" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toSpinner"
+        android:text="@string/toSpinner" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toTab"
+        android:text="@string/toTab" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toDatePickerAndTimePicker"
+        android:text="@string/toDatePickerAndTimePicker" />
 
 </LinearLayout>

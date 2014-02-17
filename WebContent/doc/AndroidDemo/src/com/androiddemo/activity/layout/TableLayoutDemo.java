@@ -5,6 +5,11 @@ import android.os.Bundle;
 
 import com.androiddemo.activity.R;
 
+/**
+ * 表格布局
+ * @author gaofeng2
+ *
+ */
 public class TableLayoutDemo extends Activity {
 
 	@Override

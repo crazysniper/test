@@ -34,6 +34,12 @@
         </activity>
         <activity android:name="com.androiddemo.activity.layout.FrameLayoutDemo" >
         </activity>
+        <activity android:name="com.androiddemo.activity.layout.SpinnerDemo" >
+        </activity>
+        <activity android:name="com.androiddemo.activity.layout.Tab_Demo" >
+        </activity>
+        <activity android:name="com.androiddemo.activity.layout.DatePickerAndTimePickerDemo" >
+        </activity>
         <activity android:name="com.androiddemo.listview.AdapterAndListView" >
         </activity>
         <activity android:name="com.androiddemo.listview.ArrayAdapterDemo" >
@@ -55,6 +61,15 @@
             </intent-filter>
         </service>
         <service android:name="com.androiddemo.servicedemo.ThirdService" >
+        </service>
+
+        <activity android:name="com.androiddemo.servicedemo.PlayMusicActivity" >
+        </activity>
+
+        <service android:name="com.androiddemo.servicedemo.MusicService" >
+            <intent-filter>
+                <action android:name="com.androiddemo.musicservice" />
+            </intent-filter>
         </service>
     </application>
 

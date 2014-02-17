@@ -29,7 +29,7 @@ public class ServiceActivity extends Activity {
 				FirstService.class);
 		// Í£Ö¹Service
 		this.stopService(firstServiceIntent);
-		// Æô¶¯Service ÓÃstartService()Æô¶¯Service
+		// ï¿½ï¿½ï¿½ï¿½Service ï¿½ï¿½startService()ï¿½ï¿½ï¿½ï¿½Service
 		this.startService(firstServiceIntent);
 	}
 
@@ -45,7 +45,7 @@ public class ServiceActivity extends Activity {
 		secondServiceIntent.setAction("com.androirdemo.secondservice");
 		// Í£Ö¹Service
 		// this.stopService(serviceIntent);
-		// Æô¶¯Service
+		// ï¿½ï¿½ï¿½ï¿½Service
 		this.startService(secondServiceIntent);
 	}
 
@@ -58,37 +58,41 @@ public class ServiceActivity extends Activity {
 
 	public void toBindThirdService(View view) {
 		Intent thirdServiceIntent = new Intent(ServiceActivity.this, ThirdService.class);
-		// °ó¶¨Service  
+		// ï¿½ï¿½Service  
         bindService(thirdServiceIntent, conn, BIND_AUTO_CREATE); 
 	}
 	
 	
 	public void toUnBindThirdService(View view) {
-		// ½â°óService  
+		// ï¿½ï¿½ï¿½Service  
         unbindService(conn); 
 	}
 
-	// »ñÈ¡µÚÈý¸öServiceÔÊÐí×´Ì¬
+	// ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Serviceï¿½ï¿½ï¿½ï¿½×´Ì¬
 	public void toGetThirdServiceStatus(View view){
-		Toast.makeText(this, "ServiceµÄcountÖµÊÇ£º"+binder.getCount(), Toast.LENGTH_LONG).show();
+		Toast.makeText(this, "Serviceï¿½ï¿½countÖµï¿½Ç£ï¿½"+binder.getCount(), Toast.LENGTH_LONG).show();
 	}
 	
-	// ±£³ÖËùÆô¶¯µÄServiceµÄIBinder¶ÔÏó
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Serviceï¿½ï¿½IBinderï¿½ï¿½ï¿½ï¿½
 	ThirdService.MyBinder binder;
-	// ¶¨ÒåÒ»¸öServiceConnection¶ÔÏó
+	// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ServiceConnectionï¿½ï¿½ï¿½ï¿½
 	private ServiceConnection conn = new ServiceConnection() {
-		// µ±¿Í»§¶ËÓëService½¨Á¢Á¬½ÓÊ±£¬»Øµ÷¸Ã·½·¨
+		// ï¿½ï¿½ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½Serviceï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Øµï¿½ï¿½Ã·ï¿½ï¿½ï¿½
 		@Override
 		public void onServiceConnected(ComponentName name, IBinder service) {
 			System.out.println("---onServiceConnected----");
-			// »ñÈ¡ServiceµÄonBind·½·¨Ëù·µ»ØµÄMyBinder¶ÔÏó
+			// ï¿½ï¿½È¡Serviceï¿½ï¿½onBindï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½MyBinderï¿½ï¿½ï¿½ï¿½
 			binder = (ThirdService.MyBinder) service;
 		}
 
-		// µ±¿Í»§¶ËÓëService¶Ï¿ªÁ¬½ÓÊ±£¬»Øµ÷¸Ã·½·¨
+		// ï¿½ï¿½ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½Serviceï¿½Ï¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Øµï¿½ï¿½Ã·ï¿½ï¿½ï¿½
 		@Override
 		public void onServiceDisconnected(ComponentName name) {
 			System.out.println("---onServiceDisconnected----");
 		}
 	};
+	
+	public void toMusic(View view){
+		startActivity(new Intent(this, PlayMusicActivity.class));
+	}
 }
