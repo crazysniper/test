@@ -69,5 +69,6 @@
     <string name="to_SharedPreferences">转到SharedPreferences</string>
     <string name="read_SharedPreferences">开始读SharedPreferences</string>
     <string name="write_SharedPreferences">开始写SharedPreferences</string>
-
+    <string name="to_Get_SharedPreferences_From_AnotherProject">从其他应用获得SharedPreferences</string>
+    <string name="to_Get_SharedPreferences">获得SharedPreferences</string>
 </resources>

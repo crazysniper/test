@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.View;
 
 import com.androiddemo.activity.layout.LayoutDemo;
+import com.androiddemo.data_storage.sharedPreferences_demo.GetSharedPreferencesFromAnotherProject;
 import com.androiddemo.data_storage.sharedPreferences_demo.SharedPreferencesActivity;
 import com.androiddemo.listview.AdapterAndListView;
 import com.androiddemo.sdcard.SDCardActivity;
@@ -85,5 +86,10 @@ public class MainActivity extends Activity {
 	// 转到SharedPreferences
 	public void to_SharedPreferences(View view){
 		startActivity(new Intent(this, SharedPreferencesActivity.class));
+	}
+	
+	
+	public void to_Get_SharedPreferences_From_AnotherProject(View v){
+		startActivity(new Intent(this, GetSharedPreferencesFromAnotherProject.class));
 	}
 }

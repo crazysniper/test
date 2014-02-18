@@ -34,4 +34,10 @@
         android:onClick="to_SharedPreferences"
         android:text="@string/to_SharedPreferences" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="to_Get_SharedPreferences_From_AnotherProject"
+        android:text="@string/to_Get_SharedPreferences_From_AnotherProject" />
+
 </LinearLayout>

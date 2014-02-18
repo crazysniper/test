@@ -79,6 +79,8 @@
         <!-- SharedPreferences -->
         <activity android:name="com.androiddemo.data_storage.sharedPreferences_demo.SharedPreferencesActivity" >
         </activity>
+        <activity android:name="com.androiddemo.data_storage.sharedPreferences_demo.GetSharedPreferencesFromAnotherProject" >
+        </activity>
     </application>
 
 </manifest>

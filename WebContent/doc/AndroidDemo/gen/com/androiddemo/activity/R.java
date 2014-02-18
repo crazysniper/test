@@ -29,27 +29,27 @@ public final class R {
     }
     public static final class id {
         public static final int action_settings=0x7f0a0015;
-        public static final int close=0x7f0a0009;
+        public static final int close=0x7f0a000a;
         public static final int datepicker1=0x7f0a0001;
         public static final int datepicker2=0x7f0a0002;
         public static final int desc=0x7f0a000d;
-        public static final int exit=0x7f0a0008;
+        public static final int exit=0x7f0a0009;
         public static final int img=0x7f0a0011;
         public static final int list1=0x7f0a0000;
         public static final int name=0x7f0a000c;
         public static final int password=0x7f0a000e;
-        public static final int pause=0x7f0a0007;
+        public static final int pause=0x7f0a0008;
         public static final int personlist=0x7f0a0013;
-        public static final int play=0x7f0a0005;
+        public static final int play=0x7f0a0006;
         public static final int search=0x7f0a0014;
         public static final int showchoosespinnner=0x7f0a0010;
         public static final int simpleadapterlist=0x7f0a000b;
         public static final int spinner=0x7f0a000f;
-        public static final int stop=0x7f0a0006;
-        public static final int textView=0x7f0a000a;
+        public static final int stop=0x7f0a0007;
+        public static final int textView=0x7f0a0004;
         public static final int time=0x7f0a0012;
         public static final int timepicker=0x7f0a0003;
-        public static final int toRelativeLayout=0x7f0a0004;
+        public static final int toRelativeLayout=0x7f0a0005;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -58,19 +58,20 @@ public final class R {
         public static final int array_listviewdemo=0x7f030003;
         public static final int datepicker_and_timepickerdemo=0x7f030004;
         public static final int framelayout=0x7f030005;
-        public static final int layout=0x7f030006;
-        public static final int linearlayout=0x7f030007;
-        public static final int music_service=0x7f030008;
-        public static final int relativelayout=0x7f030009;
-        public static final int sdcard=0x7f03000a;
-        public static final int servicedemo=0x7f03000b;
-        public static final int sharedpreferences_demo=0x7f03000c;
-        public static final int simpleadapter=0x7f03000d;
-        public static final int simpleadapteritem=0x7f03000e;
-        public static final int spinnerdemo=0x7f03000f;
-        public static final int start_activity=0x7f030010;
-        public static final int tab_demo=0x7f030011;
-        public static final int tablelayout=0x7f030012;
+        public static final int getsharedpreferences_from_anotherproject=0x7f030006;
+        public static final int layout=0x7f030007;
+        public static final int linearlayout=0x7f030008;
+        public static final int music_service=0x7f030009;
+        public static final int relativelayout=0x7f03000a;
+        public static final int sdcard=0x7f03000b;
+        public static final int servicedemo=0x7f03000c;
+        public static final int sharedpreferences_demo=0x7f03000d;
+        public static final int simpleadapter=0x7f03000e;
+        public static final int simpleadapteritem=0x7f03000f;
+        public static final int spinnerdemo=0x7f030010;
+        public static final int start_activity=0x7f030011;
+        public static final int tab_demo=0x7f030012;
+        public static final int tablelayout=0x7f030013;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -145,6 +146,8 @@ public final class R {
         public static final int toTab=0x7f07000e;
         public static final int toTableLayout=0x7f070006;
         public static final int toUnBindThirdService=0x7f070030;
+        public static final int to_Get_SharedPreferences=0x7f070037;
+        public static final int to_Get_SharedPreferences_From_AnotherProject=0x7f070036;
         /**  SharedPreferences 
          */
         public static final int to_SharedPreferences=0x7f070033;
