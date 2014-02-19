@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.androiddemo.activity.R;
+import com.androiddemo.component.DatePicker_And_TimePicker_Demo;
+import com.androiddemo.component.SpinnerDemo;
+import com.androiddemo.component.Tab_Demo;
 
 /**
  * 布局管理
@@ -75,6 +78,6 @@ public class LayoutDemo extends Activity {
 	
 	// DatePicker
 	public void toDatePickerAndTimePicker(View view){
-		startActivity(new Intent(this, DatePickerAndTimePickerDemo.class));
+		startActivity(new Intent(this, DatePicker_And_TimePicker_Demo.class));
 	}
 }

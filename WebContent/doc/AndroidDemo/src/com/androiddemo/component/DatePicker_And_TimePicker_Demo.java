@@ -1,4 +1,4 @@
-package com.androiddemo.activity.layout;
+package com.androiddemo.component;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import com.androiddemo.activity.R;
  * @author gaofeng2
  *
  */
-public class DatePickerAndTimePickerDemo extends Activity {
+public class DatePicker_And_TimePicker_Demo extends Activity {
 	
 	private DatePicker datePicker2;
 	private TimePicker timePicker;

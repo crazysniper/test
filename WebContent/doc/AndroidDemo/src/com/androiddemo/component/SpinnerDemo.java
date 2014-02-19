@@ -1,4 +1,4 @@
-package com.androiddemo.activity.layout;
+package com.androiddemo.component;
 
 import com.androiddemo.activity.R;
 

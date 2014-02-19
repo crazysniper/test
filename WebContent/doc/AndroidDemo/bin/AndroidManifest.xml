@@ -38,11 +38,11 @@
         </activity>
         <activity android:name="com.androiddemo.activity.layout.FrameLayoutDemo" >
         </activity>
-        <activity android:name="com.androiddemo.activity.layout.SpinnerDemo" >
+        <activity android:name="com.androiddemo.component.SpinnerDemo" >
         </activity>
-        <activity android:name="com.androiddemo.activity.layout.Tab_Demo" >
+        <activity android:name="com.androiddemo.component.Tab_Demo" >
         </activity>
-        <activity android:name="com.androiddemo.activity.layout.DatePickerAndTimePickerDemo" >
+        <activity android:name="com.androiddemo.component.DatePicker_And_TimePicker_Demo" >
         </activity>
         <activity android:name="com.androiddemo.listview.AdapterAndListView" >
         </activity>
