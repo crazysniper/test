@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.View;
 
 import com.androiddemo.activity.layout.LayoutDemo;
+import com.androiddemo.application.ApplicationActivity;
 import com.androiddemo.data_storage.sharedPreferences_demo.GetSharedPreferencesFromAnotherProject;
 import com.androiddemo.data_storage.sharedPreferences_demo.SharedPreferencesActivity;
 import com.androiddemo.listview.AdapterAndListView;
@@ -91,5 +92,9 @@ public class MainActivity extends Activity {
 	
 	public void to_Get_SharedPreferences_From_AnotherProject(View v){
 		startActivity(new Intent(this, GetSharedPreferencesFromAnotherProject.class));
+	}
+	
+	public void toApplication(View view){
+		startActivity(new Intent(this, ApplicationActivity.class));
 	}
 }

@@ -16,8 +16,14 @@ import com.androiddemo.activity.R;
  * SharedPreferences
  * 应用程序在运行的时候，可能会随着用户的使用而保持该用户的配置信息，如上次播放时的eq设置，音量设置，上网的cookies信息等等，
  * 这些小量 的信息可以通过SharedPreferences来保持，通过SharedPreferences保持的数据为一个XML文件，位于应用程序的私有文件夹。
- * @author Gao
  * 
+ * 
+ * 
+ * 1.创建一个SharedPreferences 
+ * 2.初始化SharedPreferences 参数1 sp的文件名称 参数2 sp的保存模式
+ * 3.向sp里面保存数据 首先 获取一个文本编辑器 Editor 
+ * 4.存储完毕数据记得执行commint（）保存数据 
+ * 5.读取数据  sp.getString() sp.getInt();
  */
 public class SharedPreferencesActivity extends Activity {
 

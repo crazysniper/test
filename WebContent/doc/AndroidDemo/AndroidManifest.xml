@@ -9,6 +9,8 @@
         android:targetSdkVersion="18" />
     <!-- 添加对SDCARD的写权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -80,6 +82,14 @@
         <activity android:name="com.androiddemo.data_storage.sharedPreferences_demo.SharedPreferencesActivity" >
         </activity>
         <activity android:name="com.androiddemo.data_storage.sharedPreferences_demo.GetSharedPreferencesFromAnotherProject" >
+        </activity>
+
+        <!-- Application -->
+        <activity android:name="com.androiddemo.application.ApplicationActivity" >
+        </activity>
+        <activity android:name="com.androiddemo.application.Weather_Get_Demo" >
+        </activity>
+        <activity android:name="com.androiddemo.application.Weather_Post_Demo" >
         </activity>
     </application>
 
