@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.androiddemo.activity.R;
-import com.androiddemo.entity.BookEntity;
+import com.androiddemo.entity.BookEntity_Parcelable;
 
 public class ParcelableActivity extends Activity {
 
@@ -20,13 +20,13 @@ public class ParcelableActivity extends Activity {
 
 	public void initView() {
 		tv = (TextView) findViewById(R.id.tv_parcelable);
-		BookEntity be = getIntentData();
+		BookEntity_Parcelable be = getIntentData();
 		tv.setText("bookname is:" + be.getBookName() + "\nauthor is:"
 				+ be.getAuthor() + "\npublishtime is:" + be.getPublishTime());
 	}
 
-	public BookEntity getIntentData() {
-		BookEntity be = getIntent().getParcelableExtra(IntentActivity.PAR_KEY);
+	public BookEntity_Parcelable getIntentData() {
+		BookEntity_Parcelable be = getIntent().getParcelableExtra(IntentActivity.PAR_KEY);
 		return be;
 	}
 }

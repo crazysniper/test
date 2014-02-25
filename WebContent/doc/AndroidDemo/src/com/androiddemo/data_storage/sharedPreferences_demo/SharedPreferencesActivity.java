@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.androiddemo.activity.R;
@@ -29,6 +30,7 @@ public class SharedPreferencesActivity extends Activity {
 
 	SharedPreferences sharedPreferences;
 	SharedPreferences.Editor editor;
+	private EditText et;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,10 @@ public class SharedPreferencesActivity extends Activity {
 		editor = sharedPreferences.edit();
 	}
 
+	public void initView(){
+		
+	}
+	
 	public void read_SharedPreferences(View view) {
 		// 默认为null,如果取不到，则返回null
 		String time = sharedPreferences.getString("time", null);

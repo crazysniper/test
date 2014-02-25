@@ -3,7 +3,7 @@ package com.androiddemo.entity;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class BookEntity implements Parcelable {
+public class BookEntity_Parcelable implements Parcelable {
 
 	private String bookName;
 	private String author;
@@ -14,6 +14,7 @@ public class BookEntity implements Parcelable {
 		return 0;
 	}
 
+	// 写数据进行保存
 	@Override
 	public void writeToParcel(Parcel parcel, int arg1) {
 		parcel.writeString(bookName);
@@ -21,17 +22,18 @@ public class BookEntity implements Parcelable {
 		parcel.writeInt(publishTime);
 	}
 
-	public static final Parcelable.Creator<BookEntity> CREATOR = new Creator<BookEntity>() {
-		public BookEntity createFromParcel(Parcel source) {
-			BookEntity mBook = new BookEntity();
+	// 用来创建自定义的Parcelable的对象
+	public static final Parcelable.Creator<BookEntity_Parcelable> CREATOR = new Creator<BookEntity_Parcelable>() {
+		public BookEntity_Parcelable createFromParcel(Parcel source) {
+			BookEntity_Parcelable mBook = new BookEntity_Parcelable();
 			mBook.bookName = source.readString();
 			mBook.author = source.readString();
 			mBook.publishTime = source.readInt();
 			return mBook;
 		}
 
-		public BookEntity[] newArray(int size) {
-			return new BookEntity[size];
+		public BookEntity_Parcelable[] newArray(int size) {
+			return new BookEntity_Parcelable[size];
 		}
 	};
 

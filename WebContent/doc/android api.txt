@@ -29,3 +29,6 @@ http://wenku.baidu.com/link?url=-KccUK3fPvQ-UsPeVDQ3SmmKSfrbnF_ttLQoR2PvV0gWrJ3E
 
 Android高手进阶
 http://blog.csdn.net/Android_Tutor/article/category/674246/2
+
+Serializable和Parcelable的区别
+http://www.cnblogs.com/trinea/archive/2012/11/09/2763213.html

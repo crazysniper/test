@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.androiddemo.activity.R;
-import com.androiddemo.entity.TeacherEntity;
+import com.androiddemo.entity.TeacherEntity_Serializable;
 
 public class SerializableActivity extends Activity {
 
@@ -20,14 +20,14 @@ public class SerializableActivity extends Activity {
 
 	public void initView() {
 		tv = (TextView) findViewById(R.id.tv_serializable);
-		TeacherEntity te = getIntentData();
+		TeacherEntity_Serializable te = getIntentData();
 		tv.setText("id is:" + te.getTecId() + "\nname is:" + te.getTecName()
 				+ "\nage is:" + te.getTecAge());
 
 	}
 
-	public TeacherEntity getIntentData() {
-		TeacherEntity te = (TeacherEntity) getIntent().getSerializableExtra(
+	public TeacherEntity_Serializable getIntentData() {
+		TeacherEntity_Serializable te = (TeacherEntity_Serializable) getIntent().getSerializableExtra(
 				IntentActivity.SER_KEY);
 		return te;
 	}

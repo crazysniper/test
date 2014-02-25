@@ -16,4 +16,10 @@
         android:onClick="write_SharedPreferences"
         android:text="@string/write_SharedPreferences" />
 
+    <EditText
+        android:id="@+id/et_sharedPreferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_sharedPreferences" />
+
 </LinearLayout>

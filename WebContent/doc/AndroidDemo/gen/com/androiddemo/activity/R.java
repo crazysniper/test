@@ -28,30 +28,31 @@ public final class R {
         public static final int starlogo_newyear=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0019;
+        public static final int action_settings=0x7f0a001a;
         public static final int close=0x7f0a000a;
         public static final int datepicker1=0x7f0a0001;
         public static final int datepicker2=0x7f0a0002;
-        public static final int desc=0x7f0a000f;
-        public static final int et_cityname=0x7f0a0017;
+        public static final int desc=0x7f0a0010;
+        public static final int et_cityname=0x7f0a0018;
+        public static final int et_sharedPreferences=0x7f0a000d;
         public static final int exit=0x7f0a0009;
-        public static final int img=0x7f0a0013;
+        public static final int img=0x7f0a0014;
         public static final int list1=0x7f0a0000;
-        public static final int name=0x7f0a000e;
-        public static final int password=0x7f0a0010;
+        public static final int name=0x7f0a000f;
+        public static final int password=0x7f0a0011;
         public static final int pause=0x7f0a0008;
-        public static final int personlist=0x7f0a0015;
+        public static final int personlist=0x7f0a0016;
         public static final int play=0x7f0a0006;
-        public static final int search=0x7f0a0016;
-        public static final int showchoosespinnner=0x7f0a0012;
-        public static final int simpleadapterlist=0x7f0a000d;
-        public static final int spinner=0x7f0a0011;
+        public static final int search=0x7f0a0017;
+        public static final int showchoosespinnner=0x7f0a0013;
+        public static final int simpleadapterlist=0x7f0a000e;
+        public static final int spinner=0x7f0a0012;
         public static final int stop=0x7f0a0007;
         public static final int textView=0x7f0a0004;
-        public static final int time=0x7f0a0014;
+        public static final int time=0x7f0a0015;
         public static final int timepicker=0x7f0a0003;
         public static final int toRelativeLayout=0x7f0a0005;
-        public static final int tv_info=0x7f0a0018;
+        public static final int tv_info=0x7f0a0019;
         public static final int tv_parcelable=0x7f0a000b;
         public static final int tv_serializable=0x7f0a000c;
     }
@@ -93,6 +94,7 @@ public final class R {
         public static final int action_settings=0x7f070001;
         public static final int app_name=0x7f070000;
         public static final int bindService=0x7f07002e;
+        public static final int et_sharedPreferences=0x7f070038;
         public static final int frameLayout=0x7f07000b;
         public static final int hello_world=0x7f070002;
         public static final int imagedescription=0x7f070021;
@@ -129,7 +131,7 @@ public final class R {
         public static final int toAdapterAndListView=0x7f070022;
         /**  toApplication 
          */
-        public static final int toApplication=0x7f070038;
+        public static final int toApplication=0x7f070039;
         public static final int toArrayAdapter=0x7f070023;
         public static final int toBindThirdService=0x7f07002f;
         public static final int toDatePickerAndTimePicker=0x7f07000f;
@@ -138,19 +140,19 @@ public final class R {
         public static final int toGetThirdServiceStatus=0x7f070031;
         /**  toIntent 
          */
-        public static final int toIntent=0x7f070039;
+        public static final int toIntent=0x7f07003a;
         /**  Layout 
          */
         public static final int toLayout=0x7f070003;
         public static final int toLinearLayout=0x7f070004;
         public static final int toMusic=0x7f070032;
         public static final int toNoEntries=0x7f070026;
-        public static final int toParcelable=0x7f07003b;
+        public static final int toParcelable=0x7f07003c;
         public static final int toRelativeLayout=0x7f070005;
         /**  SDCard 
          */
         public static final int toSDCard=0x7f070027;
-        public static final int toSerializable=0x7f07003a;
+        public static final int toSerializable=0x7f07003b;
         /**  Service 
          */
         public static final int toService=0x7f070028;
