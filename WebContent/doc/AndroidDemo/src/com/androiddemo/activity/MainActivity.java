@@ -90,11 +90,6 @@ public class MainActivity extends Activity {
 		startActivity(new Intent(this, SharedPreferencesActivity.class));
 	}
 	
-	// 转到从其他应用程序中获取SharedPreferences
-	public void to_Get_SharedPreferences_From_AnotherProject(View v){
-		startActivity(new Intent(this, GetSharedPreferencesFromAnotherProject.class));
-	}
-	
 	// 转到Sample Application
 	public void toApplication(View view){
 		startActivity(new Intent(this, ApplicationActivity.class));

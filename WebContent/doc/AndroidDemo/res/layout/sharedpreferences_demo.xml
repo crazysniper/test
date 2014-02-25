@@ -22,4 +22,9 @@
         android:layout_height="wrap_content"
         android:hint="@string/et_sharedPreferences" />
 
-</LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="to_Get_SharedPreferences_From_AnotherProject"
+        android:text="@string/to_Get_SharedPreferences_From_AnotherProject" />
+</LinearLayout>

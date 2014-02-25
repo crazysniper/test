@@ -21,7 +21,7 @@ public class StartActivity extends Activity implements Runnable {
 	public void run() {
 		try {
 			// 1秒后跳转到主界面
-			Thread.sleep(1000);
+			Thread.sleep(500);
 			startActivity(new Intent(this, MainActivity.class));
 			finish();
 		} catch (InterruptedException e) {
