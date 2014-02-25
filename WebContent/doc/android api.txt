@@ -9,6 +9,23 @@ http://pan.baidu.com/s/166eeN
 CEBXﾏﾂﾔﾘｵﾘﾖｷ
 http://pan.baidu.com/s/1xcEEA
 
+ListView和BaseAdapter
+http://www.cnblogs.com/loulijun/archive/2011/12/28/2305016.html
+LayoutInflater
+http://www.cnblogs.com/loulijun/archive/2011/12/28/2305452.html
+
 
 Android中的任务，进程，线程的概念
 http://blog.csdn.net/xujinsmile/article/details/8478430
+
+ListView由复杂到简单
+http://www.cnblogs.com/carmanloneliness/archive/2012/02/27/2370597.html
+
+
+android与服务器端交互
+http://wenku.baidu.com/view/8ed3a506b52acfc789ebc91f.html
+http://wenku.baidu.com/link?url=-KccUK3fPvQ-UsPeVDQ3SmmKSfrbnF_ttLQoR2PvV0gWrJ3EsmopnC-oZI5Xxs5gAliWOwDFo37PMjltta_KsQ7chcR2Vo5D9E9gEuGkL7G
+
+
+Android高手进阶
+http://blog.csdn.net/Android_Tutor/article/category/674246/2

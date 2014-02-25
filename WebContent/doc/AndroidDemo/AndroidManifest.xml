@@ -91,6 +91,14 @@
         </activity>
         <activity android:name="com.androiddemo.application.Weather_Post_Demo" >
         </activity>
+
+        <!-- Intent Serializbale  Parcelable -->
+        <activity android:name="com.androiddemo.intent.IntentActivity" >
+        </activity>
+        <activity android:name="com.androiddemo.intent.SerializableActivity" >
+        </activity>
+        <activity android:name="com.androiddemo.intent.ParcelableActivity" >
+        </activity>
     </application>
 
 </manifest>

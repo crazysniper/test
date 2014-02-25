@@ -13,6 +13,7 @@ import com.androiddemo.activity.layout.LayoutDemo;
 import com.androiddemo.application.ApplicationActivity;
 import com.androiddemo.data_storage.sharedPreferences_demo.GetSharedPreferencesFromAnotherProject;
 import com.androiddemo.data_storage.sharedPreferences_demo.SharedPreferencesActivity;
+import com.androiddemo.intent.IntentActivity;
 import com.androiddemo.listview.AdapterAndListView;
 import com.androiddemo.sdcard.SDCardActivity;
 import com.androiddemo.servicedemo.ServiceActivity;
@@ -89,12 +90,18 @@ public class MainActivity extends Activity {
 		startActivity(new Intent(this, SharedPreferencesActivity.class));
 	}
 	
-	
+	// 转到从其他应用程序中获取SharedPreferences
 	public void to_Get_SharedPreferences_From_AnotherProject(View v){
 		startActivity(new Intent(this, GetSharedPreferencesFromAnotherProject.class));
 	}
 	
+	// 转到Sample Application
 	public void toApplication(View view){
 		startActivity(new Intent(this, ApplicationActivity.class));
+	}
+	
+	// 转向Intent传递对象
+	public void toIntent(View v){
+		startActivity(new Intent(this, IntentActivity.class));
 	}
 }

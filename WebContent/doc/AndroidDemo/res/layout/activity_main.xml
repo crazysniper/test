@@ -46,4 +46,10 @@
         android:onClick="toApplication"
         android:text="@string/toApplication" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toIntent"
+        android:text="@string/toIntent" />
+
 </LinearLayout>

@@ -74,4 +74,9 @@
     
     <!-- toApplication -->
     <string name="toApplication">转向应用</string>
+    
+    <!-- toIntent -->
+    <string name="toIntent">转向Intent传递对象</string>
+    <string name="toSerializable">实现Serializable接口</string>
+    <string name="toParcelable">实现Parcelable接口</string>
 </resources>
