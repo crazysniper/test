@@ -47,7 +47,7 @@ public class SharedPreferencesActivity extends Activity {
 	}
 
 	public void initView(){
-		
+		et=(EditText)findViewById(R.id.et_sharedPreferences);
 	}
 	
 	public void read_SharedPreferences(View view) {
@@ -64,8 +64,9 @@ public class SharedPreferencesActivity extends Activity {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日   hh:mm:ss");
 		// 存入当前时间
 		editor.putString("time", sdf.format(new Date()));
-		// 存入一个随机数
-		editor.putInt("random", (int) (Math.random() * 100));
+//		// 存入一个随机数
+//		editor.putInt("random", (int) (Math.random() * 100));
+//		editor.putString("random", arg1)
 		// 提交所有存入的数据
 		editor.commit();
 	}
