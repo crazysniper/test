@@ -8,3 +8,7 @@ http://pan.baidu.com/s/166eeN
 
 CEBXﾏﾂﾔﾘｵﾘﾖｷ
 http://pan.baidu.com/s/1xcEEA
+
+
+Android中的任务，进程，线程的概念
+http://blog.csdn.net/xujinsmile/article/details/8478430
