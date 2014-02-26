@@ -99,6 +99,10 @@
         </activity>
         <activity android:name="com.androiddemo.intent.ParcelableActivity" >
         </activity>
+
+        <!-- Thread -->
+        <activity android:name="com.androiddemo.thread.HandlerDemo" >
+        </activity>
     </application>
 
 </manifest>

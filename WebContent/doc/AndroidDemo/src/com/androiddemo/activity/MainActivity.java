@@ -11,12 +11,12 @@ import android.view.View;
 
 import com.androiddemo.activity.layout.LayoutDemo;
 import com.androiddemo.application.ApplicationActivity;
-import com.androiddemo.data_storage.sharedPreferences_demo.GetSharedPreferencesFromAnotherProject;
 import com.androiddemo.data_storage.sharedPreferences_demo.SharedPreferencesActivity;
 import com.androiddemo.intent.IntentActivity;
 import com.androiddemo.listview.AdapterAndListView;
 import com.androiddemo.sdcard.SDCardActivity;
 import com.androiddemo.servicedemo.ServiceActivity;
+import com.androiddemo.thread.HandlerDemo;
 
 /**
  * 主界面
@@ -99,4 +99,10 @@ public class MainActivity extends Activity {
 	public void toIntent(View v){
 		startActivity(new Intent(this, IntentActivity.class));
 	}
+	
+	// 转向多线程
+	public void toThread(View v){
+		startActivity(new Intent(this, HandlerDemo.class));
+	}
+	
 }

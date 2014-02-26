@@ -46,4 +46,10 @@
         android:onClick="toIntent"
         android:text="@string/toIntent" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toThread"
+        android:text="@string/toThread" />
+
 </LinearLayout>

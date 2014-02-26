@@ -32,3 +32,6 @@ http://blog.csdn.net/Android_Tutor/article/category/674246/2
 
 Serializable和Parcelable的区别
 http://www.cnblogs.com/trinea/archive/2012/11/09/2763213.html
+
+
+http://www.cnblogs.com/javawebsoa/archive/2013/04/19/3030542.html

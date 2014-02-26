@@ -80,4 +80,9 @@
     <string name="toIntent">转向Intent传递对象</string>
     <string name="toSerializable">实现Serializable接口</string>
     <string name="toParcelable">实现Parcelable接口</string>
+    
+    <!-- toThread -->
+    <string name="toThread">转向多线程</string>
+    <string name="startHandler">启动Handle</string>
+    <string name="tv_before_handler">启动线程前</string>
 </resources>
