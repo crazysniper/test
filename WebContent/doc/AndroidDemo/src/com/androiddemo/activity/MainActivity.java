@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.View;
 
 import com.androiddemo.activity.layout.LayoutDemo;
-import com.androiddemo.application.ApplicationActivity;
+import com.androiddemo.application.ApplicationListDemoActivity;
 import com.androiddemo.data_storage.sharedPreferences_demo.SharedPreferencesActivity;
 import com.androiddemo.intent.IntentActivity;
 import com.androiddemo.listview.AdapterAndListView;
@@ -92,7 +92,7 @@ public class MainActivity extends Activity {
 	
 	// 转到Sample Application
 	public void toApplication(View view){
-		startActivity(new Intent(this, ApplicationActivity.class));
+		startActivity(new Intent(this, ApplicationListDemoActivity.class));
 	}
 	
 	// 转向Intent传递对象

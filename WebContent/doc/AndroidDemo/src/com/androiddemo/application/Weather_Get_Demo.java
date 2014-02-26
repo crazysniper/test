@@ -22,6 +22,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * Get方式获取天气预报
+ * @author Gao
+ *
+ */
 public class Weather_Get_Demo extends Activity {
 
 	protected static final int SUCCESS = 1;
@@ -33,7 +38,7 @@ public class Weather_Get_Demo extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.weather_demo);
+		setContentView(R.layout.application_weather_demo);
         et_cityname = (EditText) findViewById(R.id.et_cityname);
         tv_info = (TextView) findViewById(R.id.tv_info);
 	}
@@ -43,10 +48,10 @@ public class Weather_Get_Demo extends Activity {
 	 * 
 	 * @param view
 	 */
-	public void click(View view) {
+	public void toGetWeather(View view) {
 		String cityname = et_cityname.getText().toString().trim();
 		if (TextUtils.isEmpty(cityname)) {
-			Toast.makeText(this, "城市名称不能为空", 0).show();
+			Toast.makeText(this, "城市名称不能为空", Toast.LENGTH_SHORT).show();
 		} else {
 			// 北京
 			final String path = basePath + URLEncoder.encode(cityname);

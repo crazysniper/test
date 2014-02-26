@@ -72,17 +72,28 @@
     <string name="to_Get_SharedPreferences_From_AnotherProject">从其他应用获得SharedPreferences</string>
     <string name="to_Get_SharedPreferences">获得SharedPreferences</string>
     <string name="et_sharedPreferences">请输入要存储的sharedPreferences值</string>
-    
+
     <!-- toApplication -->
     <string name="toApplication">转向应用</string>
-    
+    <string name="to_GetWeather">GET方式天气预报</string>
+    <string name="ed_cityaddress">请输入查看的城市名称</string>
+    <string name="toGetWeather">查看</string>
+    <string name="tv_imgInformation">信息：</string>
+    <string name="to_PostWeather">POST方式天气预报</string>
+    <string name="to_imageOnline">网络图片查看器</string>
+    <string name="tv_imageaddress">请输入图片的地址</string>
+    <string name="ed_imageaddress">请输入图片的地址</string>
+    <string name="toVisitImg">访问图片</string>
+    <string name="imgis">图片是</string>
+
     <!-- toIntent -->
     <string name="toIntent">转向Intent传递对象</string>
     <string name="toSerializable">实现Serializable接口</string>
     <string name="toParcelable">实现Parcelable接口</string>
-    
+
     <!-- toThread -->
     <string name="toThread">转向多线程</string>
     <string name="startHandler">启动Handle</string>
     <string name="tv_before_handler">启动线程前</string>
+
 </resources>

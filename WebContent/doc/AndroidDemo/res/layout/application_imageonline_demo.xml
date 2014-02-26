@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_imageaddress" />
+
+    <EditText
+        android:id="@+id/et_path"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ed_imageaddress" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toVisitImg"
+        android:text="@string/toVisitImg" />
+
+    <ImageView
+        android:id="@+id/iv_result"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/imgis" />
+
+</LinearLayout>

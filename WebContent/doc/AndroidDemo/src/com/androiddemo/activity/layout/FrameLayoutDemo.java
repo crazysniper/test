@@ -5,6 +5,11 @@ import android.os.Bundle;
 
 import com.androiddemo.activity.R;
 
+/**
+ * 帧布局
+ * @author Gao
+ *
+ */
 public class FrameLayoutDemo extends Activity {
 
 	@Override

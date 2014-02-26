@@ -11,6 +11,11 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemSelectedListener;
 
+/**
+ * 下拉列表
+ * @author Gao
+ *
+ */
 public class SpinnerDemo extends Activity {
 	
 	private TextView showchoosespinnner;

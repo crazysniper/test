@@ -9,6 +9,7 @@ import android.widget.TabHost.OnTabChangeListener;
 
 /**
  * 继承于TabActivity,其实，TabActivity是Activity的子类
+ * Tab选项卡
  * @author gaofeng2
  *
  */
