@@ -25,8 +25,7 @@ public class ServiceActivity extends Activity {
 	}
 
 	public void toStartFirstService(View view) {
-		Intent firstServiceIntent = new Intent(ServiceActivity.this,
-				FirstService.class);
+		Intent firstServiceIntent = new Intent(ServiceActivity.this, FirstService.class);
 		// 停止Service
 		this.stopService(firstServiceIntent);
 		// 启动Service 用startService()启动Service
@@ -34,15 +33,15 @@ public class ServiceActivity extends Activity {
 	}
 
 	public void toStopFirstService(View view) {
-		Intent firstServiceIntent = new Intent(ServiceActivity.this,
-				FirstService.class);
+		Intent firstServiceIntent = new Intent(ServiceActivity.this, FirstService.class);
 		this.stopService(firstServiceIntent);
 	}
 
 	public void toStartSecondService(View view) {
-		Intent secondServiceIntent = new Intent(ServiceActivity.this,
-				SecondService.class);
+//		Intent secondServiceIntent = new Intent(ServiceActivity.this, SecondService.class);
+		Intent secondServiceIntent = new Intent();
 		secondServiceIntent.setAction("com.androirdemo.secondservice");
+//		Intent secondServiceIntent = new Intent("com.androirdemo.secondservice");
 		// 停止Service
 		// this.stopService(serviceIntent);
 		// 启动Service
@@ -50,8 +49,7 @@ public class ServiceActivity extends Activity {
 	}
 
 	public void toStopSecondService(View view) {
-		Intent secondServiceIntent = new Intent(ServiceActivity.this,
-				SecondService.class);
+		Intent secondServiceIntent = new Intent(ServiceActivity.this, SecondService.class);
 		secondServiceIntent.setAction("com.androirdemo.secondservice");
 		this.stopService(secondServiceIntent);
 	}

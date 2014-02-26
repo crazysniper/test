@@ -1,7 +1,8 @@
 package com.androiddemo.data_storage.sqlite;
 
 import com.androiddemo.activity.R;
-import com.androiddemo.dao.StudentDaoImpl;
+import com.androiddemo.dao.StudentDao;
+import com.androiddemo.dao.impl.StudentDaoImpl;
 import com.androiddemo.entity.StudentInfoEntity;
 
 import android.app.Activity;
@@ -10,7 +11,7 @@ import android.view.Menu;
 import android.view.View;
 
 public class StudentSQLiteActivity extends Activity {
-	private StudentDaoImpl dao;
+	private StudentDao dao;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
