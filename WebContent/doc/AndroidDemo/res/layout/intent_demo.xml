@@ -8,12 +8,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="toSerializable"
-        android:text="toSerializable" />
+        android:text="@string/toSerializable" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="toParcelable"
-        android:text="toParcelable" />
+        android:text="@string/toParcelable" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toImplicitIntent"
+        android:text="@string/toImplicitIntent" />
 
 </LinearLayout>

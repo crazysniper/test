@@ -12,6 +12,7 @@ import android.view.View;
 import com.androiddemo.activity.layout.LayoutDemo;
 import com.androiddemo.application.ApplicationListDemoActivity;
 import com.androiddemo.data_storage.sharedPreferences_demo.SharedPreferencesActivity;
+import com.androiddemo.data_storage.sqlite.SQLiteActivity;
 import com.androiddemo.intent.IntentActivity;
 import com.androiddemo.listview.AdapterAndListView;
 import com.androiddemo.sdcard.SDCardActivity;
@@ -105,4 +106,8 @@ public class MainActivity extends Activity {
 		startActivity(new Intent(this, HandlerDemo.class));
 	}
 	
+	// toSQLite
+	public void toSQLite(View v){
+		startActivity(new Intent(this, SQLiteActivity.class));
+	}
 }

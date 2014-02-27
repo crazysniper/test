@@ -52,4 +52,10 @@
         android:onClick="toThread"
         android:text="@string/toThread" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toSQLite"
+        android:text="@string/toSQLite" />
+
 </LinearLayout>

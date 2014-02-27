@@ -101,10 +101,25 @@
         </activity>
         <activity android:name="com.androiddemo.intent.ParcelableActivity" >
         </activity>
+        <activity android:name="com.androiddemo.intent.ImplicitIntentActivity" >
+            <intent-filter>
+                <action android:name="com.androiddemo.implicitIntent" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+ <!-- 此句一般都要加 -->
+            </intent-filter>
+        </activity>
 
         <!-- Thread -->
         <activity android:name="com.androiddemo.thread.HandlerDemo" >
         </activity>
+
+        <!-- SQLite -->
+        <activity android:name="com.androiddemo.data_storage.sqlite.SQLiteActivity" >
+        </activity>
+        <activity android:name="com.androiddemo.data_storage.sqlite.StudentSQLiteActivity" >
+        </activity>
+"
     </application>
 
 </manifest>

@@ -9,8 +9,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class StudentDaoImpl implements StudentDao {
-	private Context context;
 	private StudentInfoOpenHelper helper;
+	private Context context;
 
 	/**
 	 * 在构造方法里面必须传递进来一个上下文对象
@@ -23,22 +23,14 @@ public class StudentDaoImpl implements StudentDao {
 		helper = new StudentInfoOpenHelper(context);
 	}
 
-	/* (non-Javadoc)
-	 * @see com.androiddemo.dao.StudentDao#insert(java.lang.String, java.lang.String, int)
-	 */
 	@Override
 	public void insert(String name, String company, int salary) {
 		SQLiteDatabase db = helper.getWritableDatabase();
-		db.execSQL(
-				"insert into salaryinfo (name,company,salary) values (?,?,?)",
-				new Object[] { name, company, salary });
+		db.execSQL( "insert into salaryinfo (name,company,salary) values (?,?,?)", new Object[] { name, company, salary });
 		// 节约资源。关闭数据库
 		db.close();
 	}
 
-	/* (non-Javadoc)
-	 * @see com.androiddemo.dao.StudentDao#delete(int)
-	 */
 	@Override
 	public void delete(int id) {
 		SQLiteDatabase db = helper.getWritableDatabase();
@@ -46,27 +38,19 @@ public class StudentDaoImpl implements StudentDao {
 		db.close();
 	}
 
-	/* (non-Javadoc)
-	 * @see com.androiddemo.dao.StudentDao#updateSalary(int, int)
-	 */
 	@Override
 	public void updateSalary(int id, int newsalary) {
 		SQLiteDatabase db = helper.getWritableDatabase();
-		db.execSQL("update salaryinfo set salary=? where _id=?", new Object[] {
-				newsalary, id });
+		db.execSQL("update salaryinfo set salary=? where _id=?", new Object[] { newsalary, id });
 		db.close();
 	}
 
-	/* (non-Javadoc)
-	 * @see com.androiddemo.dao.StudentDao#find(int)
-	 */
 	@Override
 	public StudentInfoEntity find(int id) {
 		// 获取到一个可读的数据库
 		SQLiteDatabase db = helper.getReadableDatabase();
 		// 结果集的游标。
-		Cursor cursor = db.rawQuery("select * from salaryinfo where _id=?",
-				new String[] { String.valueOf(id) });
+		Cursor cursor = db.rawQuery("select * from salaryinfo where _id=?", new String[] { String.valueOf(id) });
 		// 首先把游标移动到数据的位置。
 		boolean result = cursor.moveToNext();
 		StudentInfoEntity studentInfo = null;

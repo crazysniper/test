@@ -69,4 +69,11 @@ public class IntentActivity extends Activity {
 		intent.putExtras(bundle);
 		startActivity(intent);
 	}
+	
+	// 隐式Intent
+	public void toImplicitIntent(View v){
+		Intent intent = new Intent();
+		intent.setAction("com.androiddemo.implicitIntent");
+		startActivity(intent);
+	}
 }
