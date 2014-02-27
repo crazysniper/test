@@ -9,8 +9,9 @@ import android.view.View;
 
 /**
  * Androide Demo
+ * 
  * @author Gao
- *
+ * 
  */
 public class ApplicationListDemoActivity extends Activity {
 	@Override
@@ -22,12 +23,16 @@ public class ApplicationListDemoActivity extends Activity {
 	public void to_GetWeather(View v) {
 		startActivity(new Intent(this, Weather_Get_Demo.class));
 	}
-	
+
 	public void to_PostWeather(View v) {
 		startActivity(new Intent(this, Weather_Get_Demo.class));
 	}
 
 	public void to_imageOnline(View v) {
 		startActivity(new Intent(this, ImageOnlineActivity.class));
+	}
+
+	public void toDail(View v) {
+		startActivity(new Intent(this, Dail_List_Demo.class));
 	}
 }

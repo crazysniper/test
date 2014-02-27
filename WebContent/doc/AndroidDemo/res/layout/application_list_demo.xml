@@ -16,4 +16,10 @@
         android:onClick="to_imageOnline"
         android:text="@string/to_imageOnline" />
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toDail"
+        android:text="@string/toDail" />
+
 </LinearLayout>

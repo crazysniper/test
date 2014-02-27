@@ -92,7 +92,9 @@
     <string name="toParcelable">实现Parcelable接口</string>
     <string name="toImplicitIntent">隐式Intent</string>
     <string name="tv_implicit">隐式Intent</string>
-
+    <string name="toImplicitIntentError">隐式Intent异常是抛出异常</string>
+	<string name="toBaidu">打开百度</string>
+    
     <!-- toThread -->
     <string name="toThread">转向多线程</string>
     <string name="startHandler">启动Handle</string>
@@ -101,5 +103,8 @@
     <!-- SQLite -->
     <string name="toSQLite">SQLite</string>
     <string name="toContentValues">在SQLite中使用ContentValues</string>
+    
+    <!-- toDail -->
+    <string name="toDail">拨打电话</string>
 
 </resources>

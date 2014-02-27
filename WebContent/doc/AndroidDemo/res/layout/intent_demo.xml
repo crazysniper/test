@@ -22,4 +22,16 @@
         android:onClick="toImplicitIntent"
         android:text="@string/toImplicitIntent" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toImplicitIntentError"
+        android:text="@string/toImplicitIntentError" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toBaidu"
+        android:text="@string/toBaidu" />
+
 </LinearLayout>

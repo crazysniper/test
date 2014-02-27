@@ -1,10 +1,13 @@
 package com.androiddemo.intent;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.androiddemo.activity.R;
 import com.androiddemo.entity.BookEntity_Parcelable;
@@ -74,6 +77,24 @@ public class IntentActivity extends Activity {
 	public void toImplicitIntent(View v){
 		Intent intent = new Intent();
 		intent.setAction("com.androiddemo.implicitIntent");
+		startActivity(intent);
+	}
+	
+	public void toImplicitIntentError(View v){
+		Intent intent = new Intent();
+		intent.setAction("com.androiddemo.error");	// 没有这个action，会抛出异常
+		try{
+			startActivity(intent);
+		} catch(ActivityNotFoundException e){
+			Toast.makeText(this, "没有com.androiddemo.error", Toast.LENGTH_SHORT).show();
+		}
+	}
+	
+	public void toBaidu(View v){
+		Intent intent = new Intent();	// 意图用于激活某一个页面
+		// 隐式意图 描述动作的行为
+		intent.setAction(Intent.ACTION_VIEW);
+		intent.setData(Uri.parse("http://www.baidu.com"));
 		startActivity(intent);
 	}
 }

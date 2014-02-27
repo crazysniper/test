@@ -93,6 +93,8 @@
         </activity>
         <activity android:name="com.androiddemo.application.ImageOnlineActivity" >
         </activity>
+        <activity android:name="com.androiddemo.application.Dail_List_Demo">
+        </activity>
 
         <!-- Intent Serializbale  Parcelable -->
         <activity android:name="com.androiddemo.intent.IntentActivity" >
