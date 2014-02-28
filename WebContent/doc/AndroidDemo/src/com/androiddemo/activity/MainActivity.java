@@ -11,11 +11,13 @@ import android.view.View;
 
 import com.androiddemo.activity.layout.LayoutDemo;
 import com.androiddemo.application.ApplicationListDemoActivity;
+import com.androiddemo.broadcastreciver.BroadCastActivity;
+import com.androiddemo.data_storage.fileio.FileActivity;
 import com.androiddemo.data_storage.sharedPreferences_demo.SharedPreferencesActivity;
 import com.androiddemo.data_storage.sqlite.SQLiteActivity;
 import com.androiddemo.intent.IntentActivity;
 import com.androiddemo.listview.AdapterAndListView;
-import com.androiddemo.sdcard.SDCardActivity;
+import com.androiddemo.menu.MenuActivity;
 import com.androiddemo.servicedemo.ServiceActivity;
 import com.androiddemo.thread.HandlerDemo;
 
@@ -47,11 +49,6 @@ public class MainActivity extends Activity {
 	// Adapter和ListView
 	public void toAdapterAndListView(View view) {
 		startActivity(new Intent(this, AdapterAndListView.class));
-	}
-
-	// sd卡
-	public void toSDCard(View view) {
-		startActivity(new Intent(this, SDCardActivity.class));
 	}
 
 	// Service服务
@@ -86,6 +83,11 @@ public class MainActivity extends Activity {
 		return super.onKeyDown(keyCode, event);
 	}
 	
+	// BroadCast
+	public void toBroadCast(View v){
+		startActivity(new Intent(this, BroadCastActivity.class));
+	}
+	
 	// 转到SharedPreferences
 	public void to_SharedPreferences(View view){
 		startActivity(new Intent(this, SharedPreferencesActivity.class));
@@ -106,8 +108,19 @@ public class MainActivity extends Activity {
 		startActivity(new Intent(this, HandlerDemo.class));
 	}
 	
-	// toSQLite
+	// SQLite
 	public void toSQLite(View v){
 		startActivity(new Intent(this, SQLiteActivity.class));
 	}
+	
+	// File
+	public void toFile(View view) {
+		startActivity(new Intent(this, FileActivity.class));
+	}
+
+	// Menu
+	public void toMenu(View v){
+		startActivity(new Intent(this, MenuActivity.class));
+	}
+	
 }

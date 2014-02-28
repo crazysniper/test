@@ -18,12 +18,14 @@
     <string name="toSpinner">下拉列表</string>
     <string name="toTab">Tab选项卡</string>
     <string name="toDatePickerAndTimePicker">DatePicker和TimePicker</string>
+    <string name="toAlertDialogActivity">Dialog</string>
     <!-- LinearLayout -->
     <string name="linearbtn1">线性按钮1</string>
     <string name="linearbtn2">线性按钮2</string>
     <string name="linearbtn3">线性按钮3</string>
     <string name="linearbtn4">线性按钮4</string>
     <string name="linearwarn">后面的第四个Button已经被挡住</string>
+
     <!-- TableLayout -->
     <string name="username">用户名</string>
     <string name="inputusername">请输入用户名</string>
@@ -32,10 +34,22 @@
     <string name="number">数字</string>
     <string name="inputnumber">只能输入数字</string>
     <string name="regiser">注册</string>
+
     <!-- Spinner -->
     <string name="spinnnerdemo">下拉列表示例</string>
     <string name="showchoosespinnner">选择的血型是：</string>
     <string name="subject">科目如下：</string>
+
+    <!-- Dialog -->
+    <string name="btnGeneral">普通对话框</string>
+    <string name="btnButtons1">多按钮的普通对话框1</string>
+    <string name="btnButtons2">多按钮的普通对话框2</string>
+    <string name="btnListView">列表选择对话框</string>
+    <string name="btnListViewSingle">单选列表选择对话框</string>
+    <string name="btnListViewMulti">多选列表选择对话框</string>
+    <string name="btnProgressDialog">滚动等待对话框</string>
+    <string name="btnProgressDialogH">进度条对话框</string>
+    <string name="btnCustomDialog">自定义对话框</string>
 
     <!-- Tab -->
     <string name="search_key">请输入搜索关键字</string>
@@ -48,9 +62,6 @@
     <string name="toSimpleAdapter">转到SimpleAdapter</string>
     <string name="toEntries">直接用entries</string>
     <string name="toNoEntries">不用entries</string>
-
-    <!-- SDCard -->
-    <string name="toSDCard">转到sdcard</string>
 
     <!-- Service -->
     <string name="toService">转到Service</string>
@@ -65,6 +76,11 @@
     <string name="toGetThirdServiceStatus">获取第三个Service允许状态</string>
     <string name="toMusic">转向音乐</string>
 
+    <!-- toBroadCast -->
+    <string name="toBroadCast">BroadCast</string>
+    <string name="toSendBroadCast">发送广播</string>
+    
+    
     <!-- SharedPreferences -->
     <string name="to_SharedPreferences">转到SharedPreferences</string>
     <string name="read_SharedPreferences">开始读SharedPreferences</string>
@@ -93,18 +109,28 @@
     <string name="toImplicitIntent">隐式Intent</string>
     <string name="tv_implicit">隐式Intent</string>
     <string name="toImplicitIntentError">隐式Intent异常是抛出异常</string>
-	<string name="toBaidu">打开百度</string>
-    
+    <string name="toBaidu">打开百度</string>
+
     <!-- toThread -->
     <string name="toThread">转向多线程</string>
     <string name="startHandler">启动Handle</string>
     <string name="tv_before_handler">启动线程前</string>
-    
+
     <!-- SQLite -->
     <string name="toSQLite">SQLite</string>
     <string name="toContentValues">在SQLite中使用ContentValues</string>
-    
+
+    <!-- File -->
+    <string name="toFile">转到File</string>
+    <string name="toSDCard">转到sdcard</string>
+    <string name="toFileIO">转到File存储</string>
+    <string name="ed_write">输入要保存的内容</string>
+    <string name="save">写文件</string>
+    <string name="ed_read"></string>
+    <string name="read">读文件</string>
+
     <!-- toDail -->
     <string name="toDail">拨打电话</string>
+    <string name="title_activity_menu">MenuActivity</string>
 
 </resources>

@@ -12,7 +12,6 @@
     <!-- 访问网络 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    
 
     <application
         android:allowBackup="true"
@@ -42,11 +41,15 @@
         </activity>
         <activity android:name="com.androiddemo.activity.layout.FrameLayoutDemo" >
         </activity>
+
+        <!-- Component -->
         <activity android:name="com.androiddemo.component.SpinnerDemo" >
         </activity>
         <activity android:name="com.androiddemo.component.Tab_Demo" >
         </activity>
         <activity android:name="com.androiddemo.component.DatePicker_And_TimePicker_Demo" >
+        </activity>
+        <activity android:name="com.androiddemo.component.AlertDialogActivity" >
         </activity>
         <activity android:name="com.androiddemo.listview.AdapterAndListView" >
         </activity>
@@ -54,12 +57,11 @@
         </activity>
         <activity android:name="com.androiddemo.listview.SimpleAdapteDemo" >
         </activity>
-        <activity android:name="com.androiddemo.sdcard.SDCardActivity" >
-        </activity>
+
+        <!-- 注册Service -->
         <activity android:name="com.androiddemo.servicedemo.ServiceActivity" >
         </activity>
 
-        <!-- 注册Service -->
         <service android:name="com.androiddemo.servicedemo.FirstService" />
         <service android:name="com.androiddemo.servicedemo.SecondService" >
             <intent-filter>
@@ -80,6 +82,18 @@
             </intent-filter>
         </service>
 
+        <!-- toBroadCast -->
+        <activity android:name="com.androiddemo.broadcastreciver.BroadCastActivity" >
+        </activity>
+        <activity android:name="com.androiddemo.broadcastreciver.BroadCastTest" >
+        </activity>
+        <receiver android:name="com.androiddemo.broadcastreciver.MyReceiver">
+            <intent-filter>
+                <action android:name="org.hualang.broadcast.action.MY_ACTION" />
+            </intent-filter>
+        </receiver>
+       
+
         <!-- SharedPreferences -->
         <activity android:name="com.androiddemo.data_storage.sharedPreferences_demo.SharedPreferencesActivity" >
         </activity>
@@ -95,7 +109,7 @@
         </activity>
         <activity android:name="com.androiddemo.application.ImageOnlineActivity" >
         </activity>
-        <activity android:name="com.androiddemo.application.Dail_List_Demo">
+        <activity android:name="com.androiddemo.application.Dail_List_Demo" >
         </activity>
 
         <!-- Intent Serializbale  Parcelable -->
@@ -110,7 +124,7 @@
                 <action android:name="com.androiddemo.implicitIntent" />
 
                 <category android:name="android.intent.category.DEFAULT" />
- <!-- 此句一般都要加 -->
+                <!-- 此句一般都要加 -->
             </intent-filter>
         </activity>
 
@@ -123,7 +137,16 @@
         </activity>
         <activity android:name="com.androiddemo.data_storage.sqlite.StudentSQLiteActivity" >
         </activity>
-"
+
+        <!-- File -->
+        <activity android:name="com.androiddemo.data_storage.fileio.FileActivity" >
+        </activity>
+        <activity android:name="com.androiddemo.data_storage.fileio.SDCardActivity" >
+        </activity>
+        <activity android:name="com.androiddemo.data_storage.fileio.FileIOActivity" >
+        </activity>
+        <activity android:name="com.androiddemo.activity.MenuActivity" >
+        </activity>
     </application>
 
 </manifest>

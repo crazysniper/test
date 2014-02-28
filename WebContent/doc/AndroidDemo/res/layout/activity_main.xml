@@ -19,26 +19,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="toSDCard"
-        android:text="@string/toSDCard" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="toService"
-        android:text="@string/toService" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:onClick="to_SharedPreferences"
         android:text="@string/to_SharedPreferences" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="toApplication"
-        android:text="@string/toApplication" />
 
     <Button
         android:layout_width="match_parent"
@@ -55,9 +37,31 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="toService"
+        android:text="@string/toService" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toBroadCast"
+        android:text="@string/toService" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="toSQLite"
         android:text="@string/toSQLite" />
-    
-    
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toFile"
+        android:text="@string/toFile" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toApplication"
+        android:text="@string/toApplication" />
 
 </LinearLayout>

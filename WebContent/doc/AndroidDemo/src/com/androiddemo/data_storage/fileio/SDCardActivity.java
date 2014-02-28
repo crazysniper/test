@@ -1,4 +1,4 @@
-package com.androiddemo.sdcard;
+package com.androiddemo.data_storage.fileio;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,7 +22,7 @@ public class SDCardActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.sdcard);
+		setContentView(R.layout.file_sdcard);
 		initView();
 	}
 

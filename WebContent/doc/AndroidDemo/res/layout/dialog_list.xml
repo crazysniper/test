@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnGeneral"
+        android:text="@string/btnGeneral" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnButtons1"
+        android:text="@string/btnButtons1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnButtons2"
+        android:text="@string/btnButtons2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnListView"
+        android:text="@string/btnListView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnListViewSingle"
+        android:text="@string/btnListViewSingle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnListViewMulti"
+        android:text="@string/btnListViewMulti" />
+
+    <Button
+        android:id="@+id/btnProgressDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnProgressDialog"
+        android:text="@string/btnProgressDialog" />
+
+    <Button
+        android:id="@+id/btnProgressDialogH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnProgressDialogH"
+        android:text="@string/btnProgressDialogH" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnCustomDialog"
+        android:text="@string/btnCustomDialog" />
+
+</LinearLayout>

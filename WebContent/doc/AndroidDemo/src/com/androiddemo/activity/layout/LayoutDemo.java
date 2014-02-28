@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.androiddemo.activity.R;
+import com.androiddemo.component.AlertDialogActivity;
 import com.androiddemo.component.DatePicker_And_TimePicker_Demo;
 import com.androiddemo.component.SpinnerDemo;
 import com.androiddemo.component.Tab_Demo;
@@ -39,8 +40,7 @@ public class LayoutDemo extends Activity {
 				// Intent intent =new Intent();
 				// intent.setClass(LayoutDemo.this, RelativeLayoutDemo.class);
 				// startActivity(intent);
-				startActivity(new Intent(LayoutDemo.this,
-						RelativeLayoutDemo.class));
+				startActivity(new Intent(LayoutDemo.this, RelativeLayoutDemo.class));
 			}
 		});
 	}
@@ -79,5 +79,10 @@ public class LayoutDemo extends Activity {
 	// DatePicker
 	public void toDatePickerAndTimePicker(View view){
 		startActivity(new Intent(this, DatePicker_And_TimePicker_Demo.class));
+	}
+	
+	// AlertDialogActivity
+	public void toAlertDialogActivity(View view){
+		startActivity(new Intent(this, AlertDialogActivity.class));
 	}
 }

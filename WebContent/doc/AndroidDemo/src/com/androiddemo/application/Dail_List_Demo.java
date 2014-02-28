@@ -8,6 +8,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
+/**
+ * 拨号列表
+ * @author gaofeng2
+ *
+ */
 public class Dail_List_Demo extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

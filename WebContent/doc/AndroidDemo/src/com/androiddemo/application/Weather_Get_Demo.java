@@ -60,8 +60,7 @@ public class Weather_Get_Demo extends Activity {
 					try {
 						URL url = new URL(path);
 						// 得到与服务器的连接对象
-						HttpURLConnection conn = (HttpURLConnection) url
-								.openConnection();
+						HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 						// 设置请求方式为Http请求的GET
 						conn.setRequestMethod("GET");
 						// 指定连接超时时间
