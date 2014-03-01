@@ -43,4 +43,9 @@ public class ComponentActivity extends Activity {
 	public void toExpandableListView(View v){
 		startActivity(new Intent(this, ExpandableListViewTest.class));
 	}
+	
+	// toProgressDialog
+	public void toProgressDialog(View v){
+		startActivity(new Intent(this, ProgressDialogActivity.class));
+	}
 }

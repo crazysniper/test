@@ -40,6 +40,7 @@
     <string name="toComponent">组件</string>
     <string name="toNotification">Notification</string>
     <string name="toExpandableListView">可展开的列表组件</string>
+    <string name="toProgressDialog">ProgressDialog</string>
     
     <!-- Spinner -->
     <string name="spinnnerdemo">下拉列表示例</string>

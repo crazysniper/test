@@ -61,6 +61,8 @@
         </activity>
         <activity android:name="com.androiddemo.component.ExpandableListViewTest" >
         </activity>
+        <activity android:name="com.androiddemo.component.ProgressDialogActivity" >
+        </activity>
         <activity android:name="com.androiddemo.component.OtherActivity" >
         </activity>
         <activity android:name="com.androiddemo.listview.AdapterAndListView" >

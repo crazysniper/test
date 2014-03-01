@@ -34,9 +34,16 @@
         android:onClick="toNotification"
         android:text="@string/toNotification" />
 
-     <Button
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="toExpandableListView"
         android:text="@string/toExpandableListView" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toProgressDialog"
+        android:text="@string/toProgressDialog" />
+
 </LinearLayout>

@@ -106,18 +106,19 @@ public final class R {
         public static final int notification_dmeo=0x7f03001c;
         public static final int other=0x7f03001d;
         public static final int parcelable_demo=0x7f03001e;
-        public static final int relativelayout=0x7f03001f;
-        public static final int serializable_demo=0x7f030020;
-        public static final int servicedemo=0x7f030021;
-        public static final int sharedpreferences_demo=0x7f030022;
-        public static final int simpleadapter=0x7f030023;
-        public static final int simpleadapteritem=0x7f030024;
-        public static final int spinnerdemo=0x7f030025;
-        public static final int sqlite_contentvalues_demo=0x7f030026;
-        public static final int sqlite_demo=0x7f030027;
-        public static final int start_activity=0x7f030028;
-        public static final int tab_demo=0x7f030029;
-        public static final int tablelayout=0x7f03002a;
+        public static final int progressdialog_demo=0x7f03001f;
+        public static final int relativelayout=0x7f030020;
+        public static final int serializable_demo=0x7f030021;
+        public static final int servicedemo=0x7f030022;
+        public static final int sharedpreferences_demo=0x7f030023;
+        public static final int simpleadapter=0x7f030024;
+        public static final int simpleadapteritem=0x7f030025;
+        public static final int spinnerdemo=0x7f030026;
+        public static final int sqlite_contentvalues_demo=0x7f030027;
+        public static final int sqlite_demo=0x7f030028;
+        public static final int start_activity=0x7f030029;
+        public static final int tab_demo=0x7f03002a;
+        public static final int tablelayout=0x7f03002b;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -131,27 +132,27 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f070001;
         public static final int app_name=0x7f070000;
-        public static final int bindService=0x7f07003b;
-        public static final int btnButtons1=0x7f070024;
-        public static final int btnButtons2=0x7f070025;
-        public static final int btnCustomDialog=0x7f07002b;
+        public static final int bindService=0x7f07003c;
+        public static final int btnButtons1=0x7f070025;
+        public static final int btnButtons2=0x7f070026;
+        public static final int btnCustomDialog=0x7f07002c;
         /**  Dialog 
          */
-        public static final int btnGeneral=0x7f070023;
-        public static final int btnListView=0x7f070026;
-        public static final int btnListViewMulti=0x7f070028;
-        public static final int btnListViewSingle=0x7f070027;
-        public static final int btnProgressDialog=0x7f070029;
-        public static final int btnProgressDialogH=0x7f07002a;
-        public static final int ed_cityaddress=0x7f07004a;
-        public static final int ed_imageaddress=0x7f070050;
-        public static final int ed_read=0x7f070065;
-        public static final int ed_write=0x7f070063;
-        public static final int et_sharedPreferences=0x7f070047;
+        public static final int btnGeneral=0x7f070024;
+        public static final int btnListView=0x7f070027;
+        public static final int btnListViewMulti=0x7f070029;
+        public static final int btnListViewSingle=0x7f070028;
+        public static final int btnProgressDialog=0x7f07002a;
+        public static final int btnProgressDialogH=0x7f07002b;
+        public static final int ed_cityaddress=0x7f07004b;
+        public static final int ed_imageaddress=0x7f070051;
+        public static final int ed_read=0x7f070066;
+        public static final int ed_write=0x7f070064;
+        public static final int et_sharedPreferences=0x7f070048;
         public static final int frameLayout=0x7f07000b;
         public static final int hello_world=0x7f070002;
-        public static final int imagedescription=0x7f07002e;
-        public static final int imgis=0x7f070052;
+        public static final int imagedescription=0x7f07002f;
+        public static final int imgis=0x7f070053;
         public static final int inputnumber=0x7f07001b;
         public static final int inputnumberpassword=0x7f070019;
         public static final int inputusername=0x7f070017;
@@ -165,109 +166,110 @@ public final class R {
         public static final int linearwarn=0x7f070015;
         public static final int number=0x7f07001a;
         public static final int password=0x7f070018;
-        public static final int read=0x7f070066;
-        public static final int read_SharedPreferences=0x7f070043;
+        public static final int read=0x7f070067;
+        public static final int read_SharedPreferences=0x7f070044;
         public static final int regiser=0x7f07001c;
         public static final int relativeLayout=0x7f070009;
-        public static final int save=0x7f070064;
-        public static final int search_btn=0x7f07002d;
+        public static final int save=0x7f070065;
+        public static final int search_btn=0x7f07002e;
         /**  Tab 
          */
-        public static final int search_key=0x7f07002c;
-        public static final int showchoosespinnner=0x7f070021;
+        public static final int search_key=0x7f07002d;
+        public static final int showchoosespinnner=0x7f070022;
         public static final int showtoast=0x7f07000c;
         /**  Spinner 
          */
-        public static final int spinnnerdemo=0x7f070020;
-        public static final int startHandler=0x7f07005c;
-        public static final int startService=0x7f070036;
-        public static final int subject=0x7f070022;
+        public static final int spinnnerdemo=0x7f070021;
+        public static final int startHandler=0x7f07005d;
+        public static final int startService=0x7f070037;
+        public static final int subject=0x7f070023;
         public static final int tableLayout=0x7f07000a;
-        public static final int title_activity_menu=0x7f070068;
+        public static final int title_activity_menu=0x7f070069;
         /**  AdapterAndListView 
          */
-        public static final int toAdapterAndListView=0x7f07002f;
+        public static final int toAdapterAndListView=0x7f070030;
         public static final int toAlertDialogActivity=0x7f070010;
-        public static final int toAnotherApplication=0x7f07005a;
+        public static final int toAnotherApplication=0x7f07005b;
         /**  toApplication 
          */
-        public static final int toApplication=0x7f070048;
-        public static final int toArrayAdapter=0x7f070030;
-        public static final int toBaidu=0x7f070059;
-        public static final int toBaseAdapter=0x7f070032;
-        public static final int toBindThirdService=0x7f07003c;
+        public static final int toApplication=0x7f070049;
+        public static final int toArrayAdapter=0x7f070031;
+        public static final int toBaidu=0x7f07005a;
+        public static final int toBaseAdapter=0x7f070033;
+        public static final int toBindThirdService=0x7f07003d;
         /**  toBroadCast 
          */
-        public static final int toBroadCast=0x7f070040;
+        public static final int toBroadCast=0x7f070041;
         /**  toComponent 
          */
         public static final int toComponent=0x7f07001d;
-        public static final int toContentValues=0x7f07005f;
+        public static final int toContentValues=0x7f070060;
         /**  toDail 
          */
-        public static final int toDail=0x7f070067;
+        public static final int toDail=0x7f070068;
         public static final int toDatePickerAndTimePicker=0x7f07000f;
-        public static final int toEntries=0x7f070033;
+        public static final int toEntries=0x7f070034;
         public static final int toExpandableListView=0x7f07001f;
         /**  File 
          */
-        public static final int toFile=0x7f070060;
-        public static final int toFileIO=0x7f070062;
+        public static final int toFile=0x7f070061;
+        public static final int toFileIO=0x7f070063;
         public static final int toFrameLayout=0x7f070007;
-        public static final int toGetThirdServiceStatus=0x7f07003e;
-        public static final int toGetWeather=0x7f07004b;
-        public static final int toImplicitIntent=0x7f070056;
-        public static final int toImplicitIntentError=0x7f070058;
+        public static final int toGetThirdServiceStatus=0x7f07003f;
+        public static final int toGetWeather=0x7f07004c;
+        public static final int toImplicitIntent=0x7f070057;
+        public static final int toImplicitIntentError=0x7f070059;
         /**  toIntent 
          */
-        public static final int toIntent=0x7f070053;
+        public static final int toIntent=0x7f070054;
         /**  Layout 
          */
         public static final int toLayout=0x7f070003;
         public static final int toLinearLayout=0x7f070004;
-        public static final int toMusic=0x7f07003f;
-        public static final int toNoEntries=0x7f070034;
+        public static final int toMusic=0x7f070040;
+        public static final int toNoEntries=0x7f070035;
         public static final int toNotification=0x7f07001e;
-        public static final int toParcelable=0x7f070055;
+        public static final int toParcelable=0x7f070056;
+        public static final int toProgressDialog=0x7f070020;
         public static final int toRelativeLayout=0x7f070005;
-        public static final int toSDCard=0x7f070061;
+        public static final int toSDCard=0x7f070062;
         /**  SQLite 
          */
-        public static final int toSQLite=0x7f07005e;
-        public static final int toSendBroadCast=0x7f070041;
-        public static final int toSerializable=0x7f070054;
+        public static final int toSQLite=0x7f07005f;
+        public static final int toSendBroadCast=0x7f070042;
+        public static final int toSerializable=0x7f070055;
         /**  Service 
          */
-        public static final int toService=0x7f070035;
-        public static final int toSimpleAdapter=0x7f070031;
+        public static final int toService=0x7f070036;
+        public static final int toSimpleAdapter=0x7f070032;
         public static final int toSpinner=0x7f07000d;
-        public static final int toStartFirstService=0x7f070037;
-        public static final int toStartSecondService=0x7f070039;
-        public static final int toStopFirstService=0x7f070038;
-        public static final int toStopSecondService=0x7f07003a;
+        public static final int toStartFirstService=0x7f070038;
+        public static final int toStartSecondService=0x7f07003a;
+        public static final int toStopFirstService=0x7f070039;
+        public static final int toStopSecondService=0x7f07003b;
         public static final int toTab=0x7f07000e;
         public static final int toTableLayout=0x7f070006;
         /**  toThread 
          */
-        public static final int toThread=0x7f07005b;
-        public static final int toUnBindThirdService=0x7f07003d;
-        public static final int toVisitImg=0x7f070051;
-        public static final int to_GetWeather=0x7f070049;
-        public static final int to_Get_SharedPreferences=0x7f070046;
-        public static final int to_Get_SharedPreferences_From_AnotherProject=0x7f070045;
-        public static final int to_PostWeather=0x7f07004d;
+        public static final int toThread=0x7f07005c;
+        public static final int toUnBindThirdService=0x7f07003e;
+        public static final int toVisitImg=0x7f070052;
+        public static final int to_GetWeather=0x7f07004a;
+        public static final int to_Get_SharedPreferences=0x7f070047;
+        public static final int to_Get_SharedPreferences_From_AnotherProject=0x7f070046;
+        public static final int to_PostWeather=0x7f07004e;
         /**  SharedPreferences 
          */
-        public static final int to_SharedPreferences=0x7f070042;
-        public static final int to_imageOnline=0x7f07004e;
-        public static final int tv_before_handler=0x7f07005d;
-        public static final int tv_imageaddress=0x7f07004f;
-        public static final int tv_imgInformation=0x7f07004c;
-        public static final int tv_implicit=0x7f070057;
+        public static final int to_SharedPreferences=0x7f070043;
+        public static final int to_imageOnline=0x7f07004f;
+        public static final int tv_before_handler=0x7f07005e;
+        public static final int tv_imageaddress=0x7f070050;
+        public static final int tv_imgInformation=0x7f07004d;
+        public static final int tv_implicit=0x7f070058;
         /**  TableLayout 
          */
         public static final int username=0x7f070016;
-        public static final int write_SharedPreferences=0x7f070044;
+        public static final int write_SharedPreferences=0x7f070045;
     }
     public static final class style {
         /** 
