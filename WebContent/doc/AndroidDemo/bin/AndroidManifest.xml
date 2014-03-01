@@ -12,6 +12,10 @@
     <!-- 访问网络 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 添加操作闪光灯的权限 -->
+	<uses-permission android:name="android.permission.FLASHLIGHT" />
+	<!-- 添加操作振动器的权限 -->
+	<uses-permission android:name="android.permission.VIBRATE" />	
 
     <application
         android:allowBackup="true"
@@ -43,6 +47,8 @@
         </activity>
 
         <!-- Component -->
+        <activity android:name="com.androiddemo.component.ComponentActivity" >
+        </activity>
         <activity android:name="com.androiddemo.component.SpinnerDemo" >
         </activity>
         <activity android:name="com.androiddemo.component.Tab_Demo" >
@@ -51,7 +57,15 @@
         </activity>
         <activity android:name="com.androiddemo.component.AlertDialogActivity" >
         </activity>
+        <activity android:name="com.androiddemo.component.NotificationActivity" >
+        </activity>
+        <activity android:name="com.androiddemo.component.ExpandableListViewTest" >
+        </activity>
+        <activity android:name="com.androiddemo.component.OtherActivity" >
+        </activity>
         <activity android:name="com.androiddemo.listview.AdapterAndListView" >
+        </activity>
+        <activity android:name="com.androiddemo.listview.BaseAdapterActivity" >
         </activity>
         <activity android:name="com.androiddemo.listview.ArrayAdapterDemo" >
         </activity>
@@ -87,12 +101,12 @@
         </activity>
         <activity android:name="com.androiddemo.broadcastreciver.BroadCastTest" >
         </activity>
-        <receiver android:name="com.androiddemo.broadcastreciver.MyReceiver">
+
+        <receiver android:name="com.androiddemo.broadcastreciver.MyReceiver" >
             <intent-filter>
                 <action android:name="org.hualang.broadcast.action.MY_ACTION" />
             </intent-filter>
         </receiver>
-       
 
         <!-- SharedPreferences -->
         <activity android:name="com.androiddemo.data_storage.sharedPreferences_demo.SharedPreferencesActivity" >

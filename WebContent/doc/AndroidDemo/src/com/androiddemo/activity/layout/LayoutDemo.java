@@ -9,10 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.androiddemo.activity.R;
-import com.androiddemo.component.AlertDialogActivity;
-import com.androiddemo.component.DatePicker_And_TimePicker_Demo;
-import com.androiddemo.component.SpinnerDemo;
-import com.androiddemo.component.Tab_Demo;
+import com.androiddemo.component.ComponentActivity;
 
 /**
  * 布局管理
@@ -66,23 +63,9 @@ public class LayoutDemo extends Activity {
 		Toast.makeText(this, "显示提示信息", Toast.LENGTH_LONG).show();
 	}
 
-	// 下拉列表
-	public void toSpinner(View view) {
-		startActivity(new Intent(this, SpinnerDemo.class));
+	// ComponentActivity
+	public void toComponent(View v){
+		startActivity(new Intent(this, ComponentActivity.class));
 	}
 
-	// Tab选项卡
-	public void toTab(View view){
-		startActivity(new Intent(this, Tab_Demo.class));
-	}
-	
-	// DatePicker
-	public void toDatePickerAndTimePicker(View view){
-		startActivity(new Intent(this, DatePicker_And_TimePicker_Demo.class));
-	}
-	
-	// AlertDialogActivity
-	public void toAlertDialogActivity(View view){
-		startActivity(new Intent(this, AlertDialogActivity.class));
-	}
 }

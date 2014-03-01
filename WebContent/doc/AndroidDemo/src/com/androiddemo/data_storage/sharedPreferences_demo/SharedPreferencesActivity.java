@@ -69,6 +69,7 @@ public class SharedPreferencesActivity extends Activity {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日   hh:mm:ss");
 		Date date = new Date();
 		String currentTime = sdf.format(date);
+		System.out.println("currentTime:"+currentTime);
 		// 存入当前时间
 		editor.putString("time", currentTime);
 //		// 存入一个随机数

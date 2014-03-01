@@ -90,6 +90,13 @@ public class IntentActivity extends Activity {
 		}
 	}
 	
+	public void toAnotherApplication(View v){
+		Intent intent = new Intent();
+		// 第一个参数是其他应用的包名，第二个参数是完整的类名
+		intent.setClassName("com.example.androidetest", "com.example.androidetest.MainActivity");
+		startActivity(intent);
+	}
+	
 	public void toBaidu(View v){
 		Intent intent = new Intent();	// 意图用于激活某一个页面
 		// 隐式意图 描述动作的行为

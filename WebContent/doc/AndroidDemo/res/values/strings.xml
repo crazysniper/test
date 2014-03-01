@@ -19,6 +19,7 @@
     <string name="toTab">Tab选项卡</string>
     <string name="toDatePickerAndTimePicker">DatePicker和TimePicker</string>
     <string name="toAlertDialogActivity">Dialog</string>
+    
     <!-- LinearLayout -->
     <string name="linearbtn1">线性按钮1</string>
     <string name="linearbtn2">线性按钮2</string>
@@ -35,6 +36,11 @@
     <string name="inputnumber">只能输入数字</string>
     <string name="regiser">注册</string>
 
+    <!-- toComponent -->
+    <string name="toComponent">组件</string>
+    <string name="toNotification">Notification</string>
+    <string name="toExpandableListView">可展开的列表组件</string>
+    
     <!-- Spinner -->
     <string name="spinnnerdemo">下拉列表示例</string>
     <string name="showchoosespinnner">选择的血型是：</string>
@@ -60,6 +66,7 @@
     <string name="toAdapterAndListView">转到Adapter和ListVew</string>
     <string name="toArrayAdapter">转到ArrayAdapter</string>
     <string name="toSimpleAdapter">转到SimpleAdapter</string>
+    <string name="toBaseAdapter">转到BaseAdapter</string>
     <string name="toEntries">直接用entries</string>
     <string name="toNoEntries">不用entries</string>
 
@@ -110,6 +117,7 @@
     <string name="tv_implicit">隐式Intent</string>
     <string name="toImplicitIntentError">隐式Intent异常是抛出异常</string>
     <string name="toBaidu">打开百度</string>
+    <string name="toAnotherApplication">打开其他的应用</string>
 
     <!-- toThread -->
     <string name="toThread">转向多线程</string>

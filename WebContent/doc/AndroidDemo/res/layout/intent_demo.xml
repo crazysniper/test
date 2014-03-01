@@ -34,4 +34,10 @@
         android:onClick="toBaidu"
         android:text="@string/toBaidu" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toAnotherApplication"
+        android:text="@string/toAnotherApplication" />
+
 </LinearLayout>

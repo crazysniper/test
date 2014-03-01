@@ -21,4 +21,8 @@ public class AdapterAndListView extends Activity {
 	public void toSimpleAdapter(View view){
 		startActivity(new Intent(this,SimpleAdapteDemo.class));
 	}
+	
+	public void toBaseAdapter(View v){
+		startActivity(new Intent(this,BaseAdapterActivity.class));
+	}
 }

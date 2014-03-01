@@ -1,15 +1,16 @@
 package com.androiddemo.thread;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.Message;
 import android.view.View;
 import android.widget.TextView;
 
 import com.androiddemo.activity.R;
 
+@SuppressLint("HandlerLeak")
 public class HandlerDemo extends Activity {
 
 	private TextView tv;
@@ -30,17 +31,10 @@ public class HandlerDemo extends Activity {
 	public void startHandler(View v) {
 		myHandler=new MyHandler();
 		new Thread(m).start();
-		System.out
-		.println("主线程的id是：" + Thread.currentThread().getId());
+		System.out.println("主线程的id是：" + Thread.currentThread().getId());
 	}
 
 	class MyHandler extends Handler {
-		public MyHandler() {
-		}
-
-		public MyHandler(Looper looper) {
-		}
-
 		@Override
 		public void handleMessage(Message msg) {
 			super.handleMessage(msg);
@@ -56,8 +50,7 @@ public class HandlerDemo extends Activity {
 		@Override
 		public void run() {
 			while (i < 10) {
-				System.out
-						.println("当前线程的id是：" + Thread.currentThread().getId());
+				System.out.println("当前线程的id是：" + Thread.currentThread().getId());
 				try {
 					Thread.sleep(1000);
 				} catch (InterruptedException e) {

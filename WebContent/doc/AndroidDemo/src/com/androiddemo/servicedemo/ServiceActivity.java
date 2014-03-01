@@ -24,6 +24,7 @@ public class ServiceActivity extends Activity {
 		setContentView(R.layout.servicedemo);
 	}
 
+	// 开启第一个Service
 	public void toStartFirstService(View view) {
 		Intent firstServiceIntent = new Intent(ServiceActivity.this, FirstService.class);
 		// 停止Service
@@ -32,11 +33,13 @@ public class ServiceActivity extends Activity {
 		this.startService(firstServiceIntent);
 	}
 
+	// 停止第一个Service
 	public void toStopFirstService(View view) {
 		Intent firstServiceIntent = new Intent(ServiceActivity.this, FirstService.class);
 		this.stopService(firstServiceIntent);
 	}
 
+	// 开启第二个Service
 	public void toStartSecondService(View view) {
 //		Intent secondServiceIntent = new Intent(ServiceActivity.this, SecondService.class);
 		Intent secondServiceIntent = new Intent();
@@ -48,6 +51,7 @@ public class ServiceActivity extends Activity {
 		this.startService(secondServiceIntent);
 	}
 
+	// 关闭第二个Service
 	public void toStopSecondService(View view) {
 		Intent secondServiceIntent = new Intent(ServiceActivity.this, SecondService.class);
 		secondServiceIntent.setAction("com.androirdemo.secondservice");
