@@ -1,0 +1,158 @@
+01.DevOps是一组过程、方法与系统的统称。它的出现是由于软件行业日益清晰地认识到：为了按时交付软件产品和服务，（）工作必须紧密合作。
+A) 产品设计和开发
+B) 开发和测试
+C) 开发和运营
+D) 产品设计和运营
+
+02.Mac OS X采用的换行符是下面哪一个？
+A) LF
+B) CR
+C) CR+LF
+D) LF+CR
+
+03.下面哪些是智能手机常用的手势名称？
+A) Click
+B) Zoom
+C) Pinch
+D) Flick
+E) Tap
+
+04.下面哪些标签在HTML5中不被支持？
+A) applet
+B) strong
+C) font
+D) frame
+E) s
+F) strike
+G) i
+
+05.JSON的标准MIME Type是下面哪一个？
+A) data/json
+B) application/json
+C) text/json
+D) text/javascript
+
+06.下面哪一个不是OAuth的通常角色之一
+A) Service Provider 服务提供方（服务商）
+B) Consumer 消费方（第三方）
+C) User 用户
+D) Certificate authority 认证机构
+
+07.下面哪一种隔离级别允许脏读（dirty reads）
+A) 可序列化(Serializable)
+B) 可重复读(Repeatable reads)
+C) 授权读(Read committed)
+D) 未授权读(Read uncommitted)
+
+08.以下对活动目录的描述哪个最准确？
+A) 一个数据库
+B) 一个用来存放用户信息的数据库
+C) 一个用来存放计算机帐号的数据库
+D) 一个存放用户信息，计算机帐号，服务配置等相关对象信息的集合
+
+09.在bash中，可以用下列哪个变量取得参数个数？
+A) $0
+B) $*
+C) $@
+D) $#
+
+10.window的文件共享，一般通过什么协议进行
+A) SMB
+B) NTFS
+C) AFP
+D) Samba
+
+11.在负责传输电子邮件的标准协议中，用于提交和传送电子邮件的协议是
+A）SMTP
+B）POP3 
+C）MIME 
+D）SNMP
+
+12.Hyper-V、VMWare等属于下面哪一种硬件虚拟
+A) 平行虚拟化
+B) 部分虚拟化
+C) 完全虚拟化
+D) 移动虚拟化
+
+13.交换机工作在OSI参考模型的哪一层？路由器工作在哪一层？
+A) 应用层
+B) 表示层
+C) 会话层
+D) 传输层
+E) 网络层
+F) 数据链路层
+G) 物理层
+
+14.IPv6采用了的是多少位的地址
+A) 32位
+B) 64位
+C) 128位
+D) 256位
+
+15.IDS规则包括网络误用和下面哪一个
+A) 网络异常
+B) 系统误用
+C) 系统异常
+D) 操作异常
+
+16.使用RAID作为网络存储设备有许多好处，以下关于RAID的叙述中不正确的是
+A) RAID使用多块廉价磁盘阵列构成，提高了性能价格比
+B) RAID采用交叉存取技术，提高了访问速度
+C) RAID 0使用磁盘镜像技术，提高了可靠性
+D) RAID 3利用一台奇偶校验盘完成容错功能，减少了冗余磁盘数量
+
+17.IaaS计算实现机制中，系统管理模块的核心功能是
+A) 负载均衡
+B) 监视节点的运行状态
+C) 应用API
+D) 节点环境配置
+
+18.在密码学中，单向hash函数具有下列哪种特性
+A) 对输入的长度不固定的字符串，返回不同长度的字符串
+B) 不仅可以用于产生信息摘要，还可以用于加密信息
+C) 在某一特定时间内，无法查找经hash操作后生成特定hash值的原报文
+D) 不能运用hash解决验证签名、用户身份认证和不可抵赖性问题
+
+19.ITIL中，哪一个模型提供服务、资产和基础架构的视图?
+A) 故障模型
+B) 问题模型
+C) 配置模型
+D) 变更模型
+
+20.有下列XML
+<bookstore>
+
+  <book category="COOKING">
+    <title lang="en">Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+  
+  <book category="CHILDREN">
+    <title lang="en">Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+  
+  <book category="WEB">
+    <title lang="en">XQuery Kick Start</title>
+    <author>James McGovern</author>
+    <author>Per Bothner</author>
+    <author>Kurt Cagle</author>
+    <author>James Linn</author>
+    <author>Vaidyanathan Nagarajan</author>
+    <year>2003</year>
+    <price>49.99</price>
+  </book>
+
+</bookstore>
+如果用下列XPATH，得到的结果是哪一个？
+/bookstore/book/price/text()
+A) 30.00
+B) 29.99
+C) 49.99
+D) 30.00
+   29.99
+   49.99
