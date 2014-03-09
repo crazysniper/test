@@ -22,4 +22,10 @@
         android:onClick="toBaseAdapter"
         android:text="@string/toBaseAdapter" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toSelect"
+        android:text="全选、反选、不选" />
+
 </LinearLayout>

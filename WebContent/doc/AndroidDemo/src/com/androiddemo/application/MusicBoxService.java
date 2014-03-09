@@ -39,7 +39,7 @@ public class MusicBoxService extends Service {
 		registerReceiver(serviceReceiver, filter);
 		// 创建MediaPlayer
 		mPlayer = new MediaPlayer();
-		// 为MediaPlayer播放完成事件绑定监听器
+		// 为MediaPlayer播放完成事件绑定监听器，设置循环播放
 		mPlayer.setOnCompletionListener(new OnCompletionListener() // ①
 		{
 			@Override

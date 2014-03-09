@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/context1"
+        android:icon="@drawable/ic_launcher"
+        android:title="新增">
+    </item>
+    <item
+        android:id="@+id/context2"
+        android:icon="@drawable/ic_launcher"
+        android:title="删除">
+    </item>
+    <item
+        android:id="@+id/context3"
+        android:icon="@drawable/ic_launcher"
+        android:title="刷新">
+    </item>
+    <item
+        android:id="@+id/context4"
+        android:icon="@drawable/ic_launcher"
+        android:title="管理用户">
+    </item>
+    <item
+        android:id="@+id/context5"
+        android:icon="@drawable/ic_launcher"
+        android:title="群发">
+    </item>
+    <item
+        android:id="@+id/context6"
+        android:icon="@drawable/ic_launcher"
+        android:title="json导入">
+    </item>
+
+</menu>

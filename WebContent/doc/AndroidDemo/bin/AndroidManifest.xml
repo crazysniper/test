@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="18" />
     <!-- 添加对SDCARD的写权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -70,6 +70,8 @@
         <activity android:name="com.androiddemo.component.OtherActivity" >
         </activity>
         <activity android:name="com.androiddemo.listview.AdapterAndListView" >
+        </activity>
+        <activity android:name="com.androiddemo.listview.Ex_checkboxActivity" >
         </activity>
         <activity android:name="com.androiddemo.listview.BaseAdapterActivity" >
         </activity>
@@ -179,6 +181,10 @@
         </activity>
         <activity android:name="com.androiddemo.activity.MenuActivity" >
         </activity>
+        
+        <!-- Activity生命周期 -->
+        <activity android:name=".ActivityOne"></activity>
+        <activity android:name=".ActivityTwo"></activity>
     </application>
 
 </manifest>
