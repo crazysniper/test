@@ -7,21 +7,20 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.androiddemo.activity.R;
 import com.androiddemo.entity.BookEntity_Parcelable;
 import com.androiddemo.entity.TeacherEntity_Serializable;
 
-public class IntentActivity extends Activity {
+public class IntentActivity extends Activity{
 
 	/**
-	 * android 中自定义的对象序列化的问题有两个选择一个是Parcelable，另外一个是Serializable。 
+	 * android 中自定义的对象序列化的问题有两个选择一个是Parcelable，另外一个是Serializable。
 	 * 
-	 * 一 序列化原因：
-	 * 1.永久性保存对象，保存对象的字节序列到本地文件中；
-	 * 2.通过序列化对象在网络中传递对象； 
-	 * 3.通过序列化在进程间传递对象。
+	 * 一 序列化原因： 1.永久性保存对象，保存对象的字节序列到本地文件中； 2.通过序列化对象在网络中传递对象； 3.通过序列化在进程间传递对象。
 	 * 
 	 * 二 至于选取哪种可参考下面的原则：
 	 * 
@@ -31,21 +30,53 @@ public class IntentActivity extends Activity {
 	 * 
 	 * 尽管Serializable效率低点,也不提倡用，但在这种情况下，还是建议你用Serializable 。
 	 * 
-	 * 实现： 
-	 * 1、 Serializable 的实现，只需要继承 implements Serializable  即可。这只是给对象打了一个标记，系统会自动将其序列化。
-	 * 2、 Parcelabel 的实现，需要在类中添加一个静态成员变量 CREATOR，这个变量需要继承 Parcelable.Creator 接口。
+	 * 实现： 1、 Serializable 的实现，只需要继承 implements Serializable
+	 * 即可。这只是给对象打了一个标记，系统会自动将其序列化。 2、 Parcelabel 的实现，需要在类中添加一个静态成员变量
+	 * CREATOR，这个变量需要继承 Parcelable.Creator 接口。
 	 */
 	private final String TAG = "IntentActivity";
 	public final static String SER_KEY = "toSerializable";
 	public final static String PAR_KEY = "toParcelable";
 
+	private EditText et;
+	private TextView result;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.intent_demo);
+		result = (TextView)findViewById(R.id.result);
+		et = (EditText) findViewById(R.id.et_x);
 	}
 
-	// Serializeable传递对象的方法  
+	public void toStartAtivityForResult(View v){
+		Intent a = new Intent(IntentActivity.this, NextActivity.class);
+		String x = et.getText().toString();
+		a.putExtra("one", x);
+		// 启动需要监听返回值的Activity，并设置请求码：requestCode
+		// 这里调用了方法之后不能用finish()，因为从页面返回来的参数没经过处理，App就从finsih()退出了
+		startActivityForResult(a, 1);
+	}
+	
+	/**
+	 * 要对返回的参数进行处理则需要重写onActivity方法
+	 * 为了得到传回的数据，必须在前面的Activity中（指IntentActivity类）重写onActivityResult方法
+	 * 
+	 * requestCode 请求码，即调用startActivityForResult()传递过去的值 resultCode
+	 * 结果码，结果码用于标识返回数据来自哪个新Activity
+	 */
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		// 当otherActivity中返回数据的时候，会响应此方法
+		// requestCode和resultCode必须与请求startActivityForResult()和返回setResult()的时候传入的值一致。
+		if (requestCode == 1 && resultCode == 2) {
+			String three = data.getStringExtra("three");
+			result.setText(three);
+		}
+	}
+
+	// Serializeable传递对象的方法
 	public void toSerializable(View v) {
 		Log.i(TAG, "toSerializable");
 		TeacherEntity_Serializable te = new TeacherEntity_Serializable();
@@ -58,8 +89,8 @@ public class IntentActivity extends Activity {
 		intent.putExtras(bundle);
 		startActivity(intent);
 	}
-	
-	// Pacelable传递对象方法 
+
+	// Pacelable传递对象方法
 	public void toParcelable(View v) {
 		Log.i(TAG, "toParcelable");
 		BookEntity_Parcelable be = new BookEntity_Parcelable();
@@ -72,36 +103,39 @@ public class IntentActivity extends Activity {
 		intent.putExtras(bundle);
 		startActivity(intent);
 	}
-	
+
 	// 隐式Intent
-	public void toImplicitIntent(View v){
+	public void toImplicitIntent(View v) {
 		Intent intent = new Intent();
 		intent.setAction("com.androiddemo.implicitIntent");
 		startActivity(intent);
 	}
-	
-	public void toImplicitIntentError(View v){
+
+	public void toImplicitIntentError(View v) {
 		Intent intent = new Intent();
-		intent.setAction("com.androiddemo.error");	// 没有这个action，会抛出异常
-		try{
+		intent.setAction("com.androiddemo.error"); // 没有这个action，会抛出异常
+		try {
 			startActivity(intent);
-		} catch(ActivityNotFoundException e){
-			Toast.makeText(this, "没有com.androiddemo.error", Toast.LENGTH_SHORT).show();
+		} catch (ActivityNotFoundException e) {
+			Toast.makeText(this, "没有com.androiddemo.error", Toast.LENGTH_SHORT)
+					.show();
 		}
 	}
-	
-	public void toAnotherApplication(View v){
+
+	public void toAnotherApplication(View v) {
 		Intent intent = new Intent();
 		// 第一个参数是其他应用的包名，第二个参数是完整的类名
-		intent.setClassName("com.example.androidetest", "com.example.androidetest.MainActivity");
+		intent.setClassName("com.example.androidetest",
+				"com.example.androidetest.MainActivity");
 		startActivity(intent);
 	}
-	
-	public void toBaidu(View v){
-		Intent intent = new Intent();	// 意图用于激活某一个页面
+
+	public void toBaidu(View v) {
+		Intent intent = new Intent(); // 意图用于激活某一个页面
 		// 隐式意图 描述动作的行为
 		intent.setAction(Intent.ACTION_VIEW);
 		intent.setData(Uri.parse("http://www.baidu.com"));
 		startActivity(intent);
 	}
+
 }

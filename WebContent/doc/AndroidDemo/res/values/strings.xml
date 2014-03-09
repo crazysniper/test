@@ -19,7 +19,7 @@
     <string name="toTab">Tab选项卡</string>
     <string name="toDatePickerAndTimePicker">DatePicker和TimePicker</string>
     <string name="toAlertDialogActivity">Dialog</string>
-    
+
     <!-- LinearLayout -->
     <string name="linearbtn1">线性按钮1</string>
     <string name="linearbtn2">线性按钮2</string>
@@ -41,7 +41,8 @@
     <string name="toNotification">Notification</string>
     <string name="toExpandableListView">可展开的列表组件</string>
     <string name="toProgressDialog">ProgressDialog</string>
-    
+    <string name="toCheckboxAndRadio">单选多选</string>
+
     <!-- Spinner -->
     <string name="spinnnerdemo">下拉列表示例</string>
     <string name="showchoosespinnner">选择的血型是：</string>
@@ -86,9 +87,9 @@
 
     <!-- toBroadCast -->
     <string name="toBroadCast">BroadCast</string>
-    <string name="toSendBroadCast">发送广播</string>
-    
-    
+    <string name="toSendBroadCast">发送普通广播</string>
+    <string name="btnBasicSendOrdered">发送有序广播</string>
+
     <!-- SharedPreferences -->
     <string name="to_SharedPreferences">转到SharedPreferences</string>
     <string name="read_SharedPreferences">开始读SharedPreferences</string>
@@ -109,7 +110,8 @@
     <string name="ed_imageaddress">请输入图片的地址</string>
     <string name="toVisitImg">访问图片</string>
     <string name="imgis">图片是</string>
-
+    <string name="toMusic1">音乐盒</string>
+    
     <!-- toIntent -->
     <string name="toIntent">转向Intent传递对象</string>
     <string name="toSerializable">实现Serializable接口</string>

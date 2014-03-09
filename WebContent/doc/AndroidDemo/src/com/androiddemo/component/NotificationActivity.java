@@ -5,9 +5,10 @@ import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 import com.androiddemo.activity.R;
 
@@ -26,47 +27,55 @@ public class NotificationActivity extends Activity {
 	 * 1、正在运行的事件 2、通知事件
 	 */
 	static final int NOTIFICATION_ID = 0x123;
+	int notification_id=19172439;
 	NotificationManager nm;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.notification_dmeo);
-
 		// 获取系统的NotificationManager服务
 		nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+		Button bt1 = (Button) findViewById(R.id.send);
+		bt1.setOnClickListener(bt1lis);
+		Button bt2 = (Button) findViewById(R.id.del);
+		bt2.setOnClickListener(bt2lis);
 	}
 
-//	// 为发送通知的按钮的点击事件定义事件处理方法
-//	public void send(View source) {
-//		// 创建一个启动其他Activity的Intent
-//		Intent intent = new Intent(this, OtherActivity.class);
-//		PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
-//		Notification notify = new Notification.Builder(this)
-//				// 设置打开该通知，该通知自动消失
-//				.setAutoCancel(true)
-//				// 设置显示在状态栏的通知提示信息
-//				.setTicker("有新消息")
-//				// 设置通知的图标
-//				.setSmallIcon(R.drawable.ic_launcher)
-//				// 设置通知内容的标题
-//				.setContentTitle("一条新通知")
-//				// 设置通知内容
-//				.setContentText("恭喜你，您加薪了，工资增加20%!")
-//				// // 设置使用系统默认的声音、默认LED灯
-//				// .setDefaults(Notification.DEFAULT_SOUND |Notification.DEFAULT_LIGHTS)
-//				// 设置通知的自定义声音
-//				.setSound(Uri.parse("android.resource://com.androiddemo.activity/" + R.raw.msg))
-//				.setWhen(System.currentTimeMillis())
-//				// 设改通知将要启动程序的Intent
-//				.setContentIntent(pi).build();
-//		// 发送通知
-//		nm.notify(NOTIFICATION_ID, notify);
-//	}
+	OnClickListener bt1lis = new OnClickListener() {
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			showNotification(R.drawable.notify, "图标边的文字", "标题", "内容");
+		}
+	};
+	
+	OnClickListener bt2lis = new OnClickListener() {
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			// showNotification(R.drawable.home,"图标边的文字","标题","内容");
+			nm.cancel(notification_id);
+		}
+	};
 
-	// 为删除通知的按钮的点击事件定义事件处理方法
-	public void del(View v) {
-		// 取消通知
-		nm.cancel(NOTIFICATION_ID);
+	public void showNotification(int icon, String tickertext, String title,
+			String content) {
+		// 设置一个唯一的ID，随便设置
+		// Notification管理器
+		Notification notification = new Notification(icon, tickertext,
+				System.currentTimeMillis());
+		// 后面的参数分别是显示在顶部通知栏的小图标，小图标旁的文字（短暂显示，自动消失）系统当前时间（不明白这个有什么用）
+		notification.defaults = Notification.DEFAULT_ALL;
+		// 这是设置通知是否同时播放声音或振动，声音为Notification.DEFAULT_SOUND
+		// 振动为Notification.DEFAULT_VIBRATE;
+		// Light为Notification.DEFAULT_LIGHTS，在我的Milestone上好像没什么反应
+		// 全部为Notification.DEFAULT_ALL
+		// 如果是振动或者全部，必须在AndroidManifest.xml加入振动权限
+		PendingIntent pt = PendingIntent.getActivity(this, 0, new Intent(this,
+				OtherActivity.class), 0);
+		// 点击通知后的动作，这里是转回main 这个Acticity
+		notification.setLatestEventInfo(this, title, content, pt);
+		nm.notify(notification_id, notification);
 	}
 }

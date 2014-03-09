@@ -35,4 +35,12 @@ public class ApplicationListDemoActivity extends Activity {
 	public void toDail(View v) {
 		startActivity(new Intent(this, Dail_List_Demo.class));
 	}
+	
+	public void toMusic1(View v){
+		startActivity(new Intent(this, MusicBox.class));
+	}
+	
+	public void toRegisterAndLogin(View v){
+		startActivity(new Intent(this, Register.class));
+	}
 }

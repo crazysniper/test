@@ -8,13 +8,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="send"
+        android:id="@+id/send"
         android:text="发送Notification" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="del"
+        android:id="@+id/del"
         android:text="删除Notification" />
 
 </LinearLayout>

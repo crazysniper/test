@@ -9,6 +9,7 @@ import android.view.View;
 
 public class BroadCastTest extends Activity {
 
+	// 该receiver在Manifest.xml中注册
 	private static final String MY_ACTION="org.hualang.broadcast.action.MY_ACTION";  
 	
 	@Override
@@ -20,7 +21,13 @@ public class BroadCastTest extends Activity {
 	public void toSendBroadCast(View v) {
 		Intent intent = new Intent();
 		intent.setAction(MY_ACTION);
-		intent.putExtra("msg", "您好");
+		intent.putExtra("msg", "这是普通广播");
 		sendBroadcast(intent);
+	}
+	
+	public void btnBasicSendOrdered(View v){
+		Intent intent = new Intent(MY_ACTION);
+		intent.putExtra("msg", "这是有序广播");
+		sendOrderedBroadcast(intent, null);
 	}
 }

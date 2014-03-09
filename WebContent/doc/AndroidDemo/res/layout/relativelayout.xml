@@ -1,12 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-    
-    <TextView 
+    android:layout_height="match_parent">
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/relativeLayout"/>
-    
+        android:text="@string/relativeLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用Android:digits属性（仅输入数字与abcde）" />
+
+    <EditText
+        android:id="@+id/etNum"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:digits="123456789abcde" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用Android:inputtype属性（仅输入Email）" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用Android:inputtype属性（仅输入密码）" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:numeric="decimal|signed" />
+
+    <Button
+        android:id="@+id/btnValidation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证第一个输入框是否为123" />
 
 </RelativeLayout>

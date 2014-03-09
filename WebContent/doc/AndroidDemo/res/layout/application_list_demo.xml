@@ -22,4 +22,16 @@
         android:onClick="toDail"
         android:text="@string/toDail" />
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toMusic1"
+        android:text="@string/toMusic1" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toRegisterAndLogin"
+        android:text="注册登录" />
+
 </LinearLayout>

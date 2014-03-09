@@ -5,39 +5,46 @@
     android:orientation="vertical" >
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/linearLayout" />
+        android:text="使用Android:digits属性（仅输入数字与abcde）" />
+
+    <EditText
+        android:id="@+id/etNum"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="123456789abcde"
+        android:digits="123456789abcde" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/linearwarn" />
+        android:text="使用Android:inputtype属性（仅输入密码）" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal" >
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="inputType=textPassword"
+        android:inputType="textPassword" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/linearbtn1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用Android:inputtype属性（仅输入Email）" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/linearbtn2" />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="numeric=decimal|signed"
+        android:numeric="decimal|signed" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/linearbtn3" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/linearbtn4" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/btnValidation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证第一个输入框是否为123" />
 
 </LinearLayout>

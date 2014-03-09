@@ -19,6 +19,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="toTab1"
+        android:text="toTab1" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="toDatePickerAndTimePicker"
         android:text="@string/toDatePickerAndTimePicker" />
 
@@ -45,5 +51,11 @@
         android:layout_height="wrap_content"
         android:onClick="toProgressDialog"
         android:text="@string/toProgressDialog" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toCheckboxAndRadio"
+        android:text="@string/toCheckboxAndRadio" />
 
 </LinearLayout>

@@ -13,9 +13,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <!-- 添加操作闪光灯的权限 -->
-	<uses-permission android:name="android.permission.FLASHLIGHT" />
-	<!-- 添加操作振动器的权限 -->
-	<uses-permission android:name="android.permission.VIBRATE" />	
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 添加操作振动器的权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -53,6 +53,8 @@
         </activity>
         <activity android:name="com.androiddemo.component.Tab_Demo" >
         </activity>
+        <activity android:name="com.androiddemo.component.Tab_Demo1" >
+        </activity>
         <activity android:name="com.androiddemo.component.DatePicker_And_TimePicker_Demo" >
         </activity>
         <activity android:name="com.androiddemo.component.AlertDialogActivity" >
@@ -60,6 +62,8 @@
         <activity android:name="com.androiddemo.component.NotificationActivity" >
         </activity>
         <activity android:name="com.androiddemo.component.ExpandableListViewTest" >
+        </activity>
+        <activity android:name="com.androiddemo.component.CheckboxAndRadio" >
         </activity>
         <activity android:name="com.androiddemo.component.ProgressDialogActivity" >
         </activity>
@@ -79,7 +83,9 @@
         </activity>
 
         <service android:name="com.androiddemo.servicedemo.FirstService" />
-        <service android:name="com.androiddemo.servicedemo.SecondService" >
+        <service
+            android:name="com.androiddemo.servicedemo.SecondService"
+            android:exported="false" >
             <intent-filter>
 
                 <!-- 为该Service组件的intent-filter配置action -->
@@ -92,7 +98,9 @@
         <activity android:name="com.androiddemo.servicedemo.PlayMusicActivity" >
         </activity>
 
-        <service android:name="com.androiddemo.servicedemo.MusicService" >
+        <service
+            android:name="com.androiddemo.servicedemo.MusicService"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="com.androiddemo.musicservice" />
             </intent-filter>
@@ -104,7 +112,9 @@
         <activity android:name="com.androiddemo.broadcastreciver.BroadCastTest" >
         </activity>
 
-        <receiver android:name="com.androiddemo.broadcastreciver.MyReceiver" >
+        <receiver
+            android:name="com.androiddemo.broadcastreciver.MyReceiver"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="org.hualang.broadcast.action.MY_ACTION" />
             </intent-filter>
@@ -127,7 +137,11 @@
         </activity>
         <activity android:name="com.androiddemo.application.Dail_List_Demo" >
         </activity>
-
+        <activity android:name="com.androiddemo.application.MusicBox" >
+        </activity>
+        <activity android:name="com.androiddemo.application.Register" >
+        </activity>
+        
         <!-- Intent Serializbale  Parcelable -->
         <activity android:name="com.androiddemo.intent.IntentActivity" >
         </activity>
@@ -142,6 +156,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <!-- 此句一般都要加 -->
             </intent-filter>
+        </activity>
+        <activity android:name="com.androiddemo.intent.NextActivity" >
         </activity>
 
         <!-- Thread -->

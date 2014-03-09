@@ -9,5 +9,9 @@
         android:layout_height="wrap_content"
         android:onClick="toSendBroadCast"
         android:text="@string/toSendBroadCast" />
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnBasicSendOrdered"
+        android:text="@string/btnBasicSendOrdered" />
 </LinearLayout>

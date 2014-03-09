@@ -24,6 +24,11 @@ public class ComponentActivity extends Activity {
 		startActivity(new Intent(this, Tab_Demo.class));
 	}
 
+	// Tab选项卡1
+	public void toTab1(View view) {
+		startActivity(new Intent(this, Tab_Demo1.class));
+	}
+	
 	// DatePicker
 	public void toDatePickerAndTimePicker(View view) {
 		startActivity(new Intent(this, DatePicker_And_TimePicker_Demo.class));
@@ -47,5 +52,10 @@ public class ComponentActivity extends Activity {
 	// toProgressDialog
 	public void toProgressDialog(View v){
 		startActivity(new Intent(this, ProgressDialogActivity.class));
+	}
+	
+	// toCheckboxAndRadio
+	public void toCheckboxAndRadio(View v){
+		startActivity(new Intent(this, CheckboxAndRadio.class));
 	}
 }
