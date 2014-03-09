@@ -8,7 +8,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.androiddemo.activity.ActivityOne;
 import com.androiddemo.activity.R;
 import com.androiddemo.component.ComponentActivity;
 
@@ -69,8 +68,4 @@ public class LayoutDemo extends Activity {
 		startActivity(new Intent(this, ComponentActivity.class));
 	}
 
-	// Activity生命周期
-	public void toActivity(View v){
-		startActivity(new Intent(this, ActivityOne.class));
-	}
 }
